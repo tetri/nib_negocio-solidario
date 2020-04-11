@@ -30,9 +30,11 @@ title: "Nova Igreja Batista do Paraná"
         </button>
     </div>
 
+    {% assign items = site.data.negocio-solidario | sort: "nome" %}
+
     <div class="card-columns">
 
-        {% for item in site.data.negocio-solidario %}
+        {% for item in items %}
         <div class="card border-secondary mb-3">
             <div class="card-body">
                 <h5 class="card-title">{{ item.nome }}</h5>
