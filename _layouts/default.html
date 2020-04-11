@@ -4,7 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>{{ page.title }} - {{ site.title }}</title>
+  <title>{{ site.title }} - {{ page.title }}</title>
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 
   {% seo %}
@@ -55,7 +55,7 @@
     <a name="search"></a>
     <div class="row justify-content-center">
       <div class="col-12 col-md-10 col-lg-8">
-        <form class="card card-sm" action="{{ site.url }}/search.html#search" method="get">
+        <form class="card card-sm" action="{{ "/search.html#search" | relative_url }}" method="get">
           <div class="card-body row no-gutters align-items-center">
             <div class="col-auto">
               <i class="fas fa-search h4 text-body"></i>
