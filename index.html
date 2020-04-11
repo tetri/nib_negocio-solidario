@@ -1,0 +1,70 @@
+---
+layout: default
+title: "Nova Igreja Batista do Paraná"
+---
+
+<div class="container-fluid">
+    <div class="jumbotron">
+        <h1 class="display-4">Negócio Solidário</h1>
+        <p class="lead">A Nova Igreja Batista do Paraná, em seu esforço para cooperar no combate ao avanço da Covid-19,
+            mas também sensível à realidade das famílias que perderam total ou parcialmente suas fontes de renda, criou
+            este formulário para que a comunidade tenha acesso à informação de irmãos e irmãs que podem fornecer
+            qualquer tipo de produto ou serviço do qual estejam necessitando.</p>
+        <hr class="my-4">
+        <p>A Nova Igreja Batista (NIB) do Paraná em Cascavel é uma igreja para toda a família, que acredita na alegria
+            de ser cristão e no prazer de compartilhar essa alegria com outras pessoas, para que recebam a Palavra de
+            Deus, amor e salvação em Cristo.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Conheça a NIB Paraná</a>
+        </p>
+    </div>
+
+
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>ATENÇÃO!</strong> Qualquer produto ou serviço comprado de qualquer fornecedor divulgado nesta página é
+        um negócio realizado exclusivamente entre comprador e fornecedor, não gerando qualquer responsabilidade para a
+        Nova Igreja Batista do
+        Paraná.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="card-columns">
+
+        {% for item in site.data.negocio-solidario %}
+        <div class="card border-secondary mb-3">
+            <div class="card-body">
+                <h5 class="card-title">{{ item.nome }}</h5>
+                {% if item.produtos != '' %}
+                <p class="card-text">{{ item.produtos | newline_to_br }}</p>
+                {% endif %}
+            </div>
+            <ul class="list-group list-group-flush">
+                {% if item.local != '' %}
+                <li class="list-group-item">{{ item.local }} <a
+                        href="https://www.google.com/maps/search/{{ item.local | escape }}" title="{{ item.local }}"
+                        target="_blank" aria-label="ver no mapa"><i class="fas fa-map-marker-alt"></i></a></li>
+                {% endif %}
+                {% if item.telefone != '' %}
+                <li class="list-group-item text-right">{{ item.telefone }}</li>
+                {% endif %}
+            </ul>
+            <div class="card-body">
+                {% if item.link != '' %}
+                {% if item.link contains 'http' %}
+                <a class="card-link" href="{{ item.link }}" title="{{ item.nome }}" target="_blank">{{ item.link }}</a>
+                {% else %}
+                {% if item.link contains 'www' %}
+                <a class="card-link" href="http://{{ item.link }}" title="{{ item.nome }}"
+                    target="_blank">{{ item.link }}</a>
+                {% else %}
+                {{ item.link }}
+                {% endif %}
+                {% endif %}
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
