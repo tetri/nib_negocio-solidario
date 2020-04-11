@@ -22,7 +22,7 @@
         
         if (item.local != '')
         appendString += '    <li class="list-group-item">' + item.local + ' <a'
-        + '           href="https://www.google.com/maps/search/' + item.local + '" title="' + item.local + '"'
+        + '           href="https://www.google.com/maps/search/' + item.local + '" rel="noreferrer" title="' + item.local + '"'
         + '            target="_blank" aria-label="ver no mapa"><i class="fas fa-map-marker-alt"></i></a></li>';
 
         if (item.telefone != '')
@@ -33,9 +33,9 @@
 
         if (item.link != '') {
           if (item.link.startsWith('http')) {
-            appendString += '    <a class="card-link" href="' + item.link + '" title="' + item.nome + '" target="_blank">' + item.link + '</a>';
+            appendString += '    <a class="card-link" href="' + item.link + '" rel="noreferrer" title="' + item.nome + '" target="_blank">' + item.link + '</a>';
           } else if (item.link.includes('www')) {
-            appendString += '    <a class="card-link" href="http://' + item.link + '" title="' + item.nome + '" target="_blank">' + item.link + '</a>';
+            appendString += '    <a class="card-link" href="http://' + item.link + '" rel="noreferrer" title="' + item.nome + '" target="_blank">' + item.link + '</a>';
           }
         }
         else

@@ -17,7 +17,7 @@ title: "Nova Igreja Batista do Paraná"
         <ul class="list-group list-group-flush">
             {% if item.local != '' %}
             <li class="list-group-item">{{ item.local }} <a
-                    href="https://www.google.com/maps/search/{{ item.local | escape }}" title="{{ item.local }}"
+                    href="https://www.google.com/maps/search/{{ item.local | escape }}" rel="noreferrer" title="{{ item.local }}"
                     target="_blank" aria-label="ver no mapa"><i class="fas fa-map-marker-alt"></i></a></li>
             {% endif %}
             {% if item.telefone != '' %}
@@ -27,10 +27,10 @@ title: "Nova Igreja Batista do Paraná"
         <div class="card-body">
             {% if item.link != '' %}
             {% if item.link contains 'http' %}
-            <a class="card-link" href="{{ item.link }}" title="{{ item.nome }}" target="_blank">{{ item.link }}</a>
+            <a class="card-link" href="{{ item.link }}" rel="noreferrer" title="{{ item.nome }}" target="_blank">{{ item.link }}</a>
             {% else %}
             {% if item.link contains 'www' %}
-            <a class="card-link" href="http://{{ item.link }}" title="{{ item.nome }}"
+            <a class="card-link" href="http://{{ item.link }}" rel="noreferrer" title="{{ item.nome }}"
                 target="_blank">{{ item.link }}</a>
             {% else %}
             {{ item.link }}
