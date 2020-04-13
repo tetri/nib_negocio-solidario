@@ -1,3 +1,5 @@
 .jekyll-cache
 _site
+venv
 Gemfile.lock
+update.py

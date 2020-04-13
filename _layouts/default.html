@@ -26,7 +26,8 @@
   </style>
 
   <nav class="navbar navbar-dark bg-primary">
-    <span class="navbar-text">Se tiverem amor uns pelos outros, todos saberão que vocês são meus discípulos. <strong>João 13:35</strong></span>
+    <!--<span class="navbar-text">Se tiverem amor uns pelos outros, todos saberão que vocês são meus discípulos. <strong>João 13:35</strong></span>//-->
+    <span class="navbar-text">Portanto, enquanto temos oportunidade, façamos o bem a todos, especialmente aos da família da fé. <strong>Gálatas 6:10</strong></span>
   </nav>
 
   <div class="container-fluid">
@@ -46,7 +47,6 @@
       </p>
     </div>
 
-
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
       <strong>ATENÇÃO!</strong> Qualquer produto ou serviço comprado de qualquer fornecedor divulgado nesta página é
       um negócio realizado exclusivamente entre comprador e fornecedor, não gerando qualquer responsabilidade para a
@@ -58,19 +58,16 @@
     </div>
 
     <a name="search"></a>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" style="margin-bottom: 1rem;">
       <div class="col-12">
         <form class="card card-sm" action="{{ "/search.html#search" | absolute_url }}" method="get">
           <div class="card-body row no-gutters align-items-center">
-            <div class="col-auto">
-              <i class="fas fa-search h4 text-body"></i>
-            </div>
             <div class="col">
               <input id="search-box" name="query" class="form-control form-control-lg form-control-borderless"
                 type="search" placeholder="Pesquise por nome ou produtos" aria-label="Pesquise por nome ou produtos">
             </div>
             <div class="col-auto">
-              <button class="btn btn-lg btn-success" type="submit">Pesquisar</button>
+              <button class="btn btn-lg btn-success" type="submit"><i class="fas fa-search"></i> Pesquisar</button>
             </div>
           </div>
         </form>

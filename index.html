@@ -29,6 +29,17 @@ title: "Nova Igreja Batista do Paraná"
         </div>
     </div>
     {% endif %}
+    {% if forloop.index == 50 %}
+    <div class="card text-white bg-primary mb-3">
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>Se tiverem amor uns pelos outros, todos saberão que vocês são meus discípulos.</p>
+                <footer class="blockquote-footer text-white">João 13:35
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+    {% endif %}
     <div class="card border-secondary mb-3">
         <div class="card-body">
             <h5 class="card-title">{{ item.nome }}</h5>
