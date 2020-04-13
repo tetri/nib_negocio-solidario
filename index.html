@@ -7,6 +7,28 @@ title: "Nova Igreja Batista do Paraná"
 
 <div class="card-columns">
     {% for item in items %}
+    {% if forloop.index == 10 %}
+    <div class="card text-white bg-primary mb-3">
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>Seja a amabilidade de vocês conhecida por todos. Perto está o Senhor.</p>
+                <footer class="blockquote-footer text-white">Filipenses 4:5
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+    {% endif %}
+    {% if forloop.index == 30 %}
+    <div class="card text-white bg-primary mb-3">
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>Alegrem-se sempre no Senhor. Novamente direi: Alegrem-se!</p>
+                <footer class="blockquote-footer text-white">Filipenses 4:4
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+    {% endif %}
     <div class="card border-secondary mb-3">
         <div class="card-body">
             <h5 class="card-title">{{ item.nome }}</h5>
@@ -17,8 +39,9 @@ title: "Nova Igreja Batista do Paraná"
         <ul class="list-group list-group-flush">
             {% if item.local != '' %}
             <li class="list-group-item">{{ item.local }} <a
-                    href="https://www.google.com/maps/search/{{ item.local | escape }}" rel="noreferrer" title="{{ item.local }}"
-                    target="_blank" aria-label="ver no mapa"><i class="fas fa-map-marker-alt"></i></a></li>
+                    href="https://www.google.com/maps/search/{{ item.local | escape }}" rel="noreferrer"
+                    title="{{ item.local }}" target="_blank" aria-label="ver no mapa"><i
+                        class="fas fa-map-marker-alt"></i></a></li>
             {% endif %}
             {% if item.telefone != '' %}
             <li class="list-group-item text-right">{{ item.telefone }}</li>
@@ -27,7 +50,8 @@ title: "Nova Igreja Batista do Paraná"
         <div class="card-body">
             {% if item.link != '' %}
             {% if item.link contains 'http' %}
-            <a class="card-link" href="{{ item.link }}" rel="noreferrer" title="{{ item.nome }}" target="_blank">{{ item.link }}</a>
+            <a class="card-link" href="{{ item.link }}" rel="noreferrer" title="{{ item.nome }}"
+                target="_blank">{{ item.link }}</a>
             {% else %}
             {% if item.link contains 'www' %}
             <a class="card-link" href="http://{{ item.link }}" rel="noreferrer" title="{{ item.nome }}"
