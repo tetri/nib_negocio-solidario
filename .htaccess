@@ -23,3 +23,5 @@ Header set Cache-Control "max-age=1, private, must-revalidate"
 </filesMatch>
 </ifModule>
 # END Caching
+
+ErrorDocument 404 /404.html
