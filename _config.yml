@@ -1,10 +1,7 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/" # the subpath of your site, e.g. /blog
-title: "Negócio Solidário" # the name of your site, e.g. ACME Corp.
+url: ""
+baseurl: "/"
+title: "Negócio Solidário"
 description: "A Nova Igreja Batista do Paraná, em seu esforço para cooperar no combate ao avanço da Covid-19, mas também sensível à realidade das famílias que perderam total ou parcialmente suas fontes de renda, criou este formulário para que a comunidade tenha acesso à informação de irmãos e irmãs que podem fornecer qualquer tipo de produto ou serviço do qual estejam necessitando."
 author: "Tetri Mesquita"
-
-# sass:
-#   sass_dir: assets/css
 
 include: ['.htaccess','browserconfig.xml','ads.txt','manifest.json']
