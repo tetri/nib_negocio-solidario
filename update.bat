@@ -1,5 +1,5 @@
 @echo off
 
-\venv\Scripts\activate
+::\venv\Scripts\activate
 
 py update.py

@@ -4,3 +4,4 @@ _site
 venv
 Gemfile.lock
 update.py
+update.bat
