@@ -7,7 +7,6 @@
   <title>{{ site.title }} - {{ page.title }}</title>
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 
-  <!-- Google Analytics -->
   {% include google-analytics.html %}
 
   {% seo %}
@@ -29,6 +28,15 @@
       border: none;
       outline: none;
       box-shadow: none;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    #sticky-footer {
+      flex-shrink: none;
     }
   </style>
 

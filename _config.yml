@@ -1,7 +1,7 @@
 url: ""
 baseurl: "/"
 title: "Negócio Solidário"
-description: "A Nova Igreja Batista do Paraná, em seu esforço para cooperar no combate ao avanço da Covid-19, mas também sensível à realidade das famílias que perderam total ou parcialmente suas fontes de renda, criou este formulário para que a comunidade tenha acesso à informação de irmãos e irmãs que podem fornecer qualquer tipo de produto ou serviço do qual estejam necessitando."
+description: "Apoio aos comerciantes, empreendedores e autônomos da Nova Igreja Batista"
 author: "Tetri Mesquita"
 
 include: ['.htaccess','browserconfig.xml','ads.txt','manifest.json']
