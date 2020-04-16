@@ -5,3 +5,5 @@ description: "Apoio aos comerciantes, empreendedores e autônomos da Nova Igreja
 author: "Tetri Mesquita"
 
 include: ['.htaccess','browserconfig.xml','ads.txt','manifest.json']
+
+timezone: America/Sao_Paulo
