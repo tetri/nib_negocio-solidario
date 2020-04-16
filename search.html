@@ -3,13 +3,18 @@ layout: default
 title: "Resultados da pesquisa"
 ---
 
-<div id="search-results" class="card-columns"></div>
+<section id="resultados">
+  <div id="search-results" class="card-columns"></div>
 
-<p><a href="{{ "/" | absolute_url }}">Mostrar todos os resultados</a></p>
+  <p><a href="{{ "/" | absolute_url }}">Mostrar todos os resultados</a></p>
+</section>
+
+
+{% assign items = site.data.negocio-solidario | sort: "data" | reverse %}
 
 <script type="text/javascript">
   window.store = {
-    {% for item in site.data.negocio-solidario %}
+    {% for item in items %}
       "{{ item.nome | slugify }}": {
         "data": "{{ item.data | xml_escape }}",
         "nome": "{{ item.nome | xml_escape }}",
