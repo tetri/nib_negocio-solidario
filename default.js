@@ -15,8 +15,7 @@ function montaCard(item) {
     '<div class="card-body">' +
     `    <h5 class="card-title">${item.nome}</h5>`;
 
-  if (item.produtos)
-    card += `    <p class="card-text">${item.produtos}</p>`;
+  if (item.produtos) card += `    <p class="card-text">${item.produtos}</p>`;
 
   card += '</div><ul class="list-group list-group-flush">';
 
@@ -33,9 +32,9 @@ function montaCard(item) {
       card += `    <a class="card-link" href="${item.link}" rel="noreferrer" title="${item.nome}" target="_blank">${item.link}</a>`;
     } else if (item.link.startsWith("www")) {
       card += `    <a class="card-link" href="http://'${item.link}" rel="noreferrer" title="${item.nome}" target="_blank">${item.link}</a>`;
+    } else {
+      card += item.link;
     }
-  } else {
-    card += item.link;
   }
 
   card += "</div>";
@@ -110,22 +109,22 @@ if (searchTerm) {
     this.field("ciente");
   });
 
-  for (let key in items) {
+  for (let key in window.store) {
     // Add the data to lunr
     idx.add({
       id: key,
-      data: items[key].data,
-      nome: items[key].nome,
-      produtos: items[key].produtos,
-      local: items[key].local,
-      telefone: items[key].telefone,
-      entrega: items[key].entrega,
-      link: items[key].link,
-      ciente: items[key].ciente,
+      data: window.store[key].data,
+      nome: window.store[key].nome,
+      produtos: window.store[key].produtos,
+      local: window.store[key].local,
+      telefone: window.store[key].telefone,
+      entrega: window.store[key].entrega,
+      link: window.store[key].link,
+      ciente: window.store[key].ciente,
     });
 
     let results = idx.search(searchTerm); // Get lunr to perform a search
-    displaySearchResults(results, items); // We'll write this in the next section
+    displaySearchResults(results, window.store); // We'll write this in the next section
   }
 } else {
   displayItems(items);

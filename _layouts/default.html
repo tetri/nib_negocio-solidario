@@ -21,7 +21,7 @@
   {% assign items = site.data.negocio-solidario | sort: "data" | reverse %}
 
   <script type="text/javascript">
-    items = {
+    window.store = {
       {% for item in items %}
         "{{ item.nome | slugify }}": {
           "data": "{{ item.data | xml_escape }}",
@@ -36,9 +36,23 @@
         {% unless forloop.last %},{% endunless %}
       {% endfor %}
     };
-    console.debug('items', items);
+    //console.debug('window.store', window.store);
 
-    //items = {{ items | strip_html | strip_newlines | jsonify }};
+    items = [
+      {% for item in items %}
+        {
+          "data": "{{ item.data | xml_escape }}",
+          "nome": "{{ item.nome | xml_escape }}",
+          "produtos": {{ item.produtos | strip_html | strip_newlines | jsonify }},
+          "local": {{ item.local | strip_html | strip_newlines | jsonify }},
+          "telefone": "{{ item.telefone | xml_escape }}",
+          "entrega": "{{ item.entrega | xml_escape }}",
+          "link": "{{ item.link | xml_escape }}",
+          "ciente": "{{ item.ciente | xml_escape }}"
+        }
+        {% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
     //console.debug('items', items);
   </script>
 
