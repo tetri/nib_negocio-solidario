@@ -36,8 +36,10 @@
         {% unless forloop.last %},{% endunless %}
       {% endfor %}
     };
-
     //console.debug('window.store', window.store);
+
+    items = {{ items | jsonify }};
+    //console.debug('items', items);
   </script>
 
   <style rel="stylesheet">

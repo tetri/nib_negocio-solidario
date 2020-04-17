@@ -13,55 +13,30 @@ function montaCard(item) {
   let card =
     '<div class="card border-secondary mb-3">' +
     '<div class="card-body">' +
-    '    <h5 class="card-title">' +
-    item.nome +
-    "</h5>";
+    `    <h5 class="card-title">${item.nome}</h5>`;
 
-  if (item.produtos != "")
-    card += '    <p class="card-text">' + item.produtos + "</p>";
+  if (item.produtos)
+    card += `    <p class="card-text">${item.produtos}</p>`;
 
-  card += "</div>" + '<ul class="list-group list-group-flush">';
+  card += '</div><ul class="list-group list-group-flush">';
 
-  if (item.local != "")
-    card +=
-      '    <li class="list-group-item">' +
-      item.local +
-      " <a" +
-      '           href="https://www.google.com/maps/search/' +
-      item.local +
-      '" rel="noreferrer" title="' +
-      item.local +
-      '"' +
-      '            target="_blank" aria-label="ver no mapa"><i class="fas fa-map-marker-alt"></i></a></li>';
+  if (item.local)
+    card += `    <li class="list-group-item">${item.local} <a href="https://www.google.com/maps/search/${item.local}" rel="noreferrer" title="${item.local}" target="_blank" aria-label="ver no mapa"> <i class="fas fa-map-marker-alt"></i></a></li>`;
 
-  if (item.telefone != "")
-    card +=
-      '    <li class="list-group-item text-right">' + item.telefone + "</li>";
+  if (item.telefone)
+    card += `    <li class="list-group-item text-right">${item.telefone}</li>`;
 
-  card += "</ul>";
-  card += '<div class="card-body">';
+  card += '</ul><div class="card-body">';
 
-  if (item.link != "") {
+  if (item.link) {
     if (item.link.startsWith("http")) {
-      card +=
-        '    <a class="card-link" href="' +
-        item.link +
-        '" rel="noreferrer" title="' +
-        item.nome +
-        '" target="_blank">' +
-        item.link +
-        "</a>";
-    } else if (item.link.includes("www")) {
-      card +=
-        '    <a class="card-link" href="http://' +
-        item.link +
-        '" rel="noreferrer" title="' +
-        item.nome +
-        '" target="_blank">' +
-        item.link +
-        "</a>";
+      card += `    <a class="card-link" href="${item.link}" rel="noreferrer" title="${item.nome}" target="_blank">${item.link}</a>`;
+    } else if (item.link.startsWith("www")) {
+      card += `    <a class="card-link" href="http://'${item.link}" rel="noreferrer" title="${item.nome}" target="_blank">${item.link}</a>`;
     }
-  } else card += "    " + item.link;
+  } else {
+    card += item.link;
+  }
 
   card += "</div>";
   card += "</div>";
@@ -71,23 +46,36 @@ function montaCard(item) {
 
 // -- search.js
 function displaySearchResults(results, store) {
-  let searchResults = document.getElementById("search-results");
+  let resultados = "<p>Nenhum resultado encontrado!</p>";
 
   if (results.length) {
-    // Are there any results?
-    let appendString = "";
+    resultados = "";
 
     for (let i = 0; i < results.length; i++) {
-      // Iterate over the results
       let item = store[results[i].ref];
 
-      appendString += montaCard(item);
+      resultados += montaCard(item);
     }
-
-    searchResults.innerHTML = appendString;
-  } else {
-    searchResults.innerHTML = "<li>Nenhum resultado encontrado!</li>";
   }
+
+  document.getElementById("search-results").innerHTML = resultados;
+}
+
+function displayItems(_items) {
+  let items = "<p>Nenhum item cadastrado!</p>";
+
+  if (_items.length) {
+    items = "";
+
+    for (let i = 0; i < _items.length; i++) {
+      let item = _items[i];
+      //console.debug('item', item);
+
+      items += montaCard(item);
+    }
+  }
+
+  document.getElementById("items").innerHTML = items;
 }
 
 function getQueryVariable(variable) {
@@ -114,7 +102,7 @@ if (searchTerm) {
     this.field("id");
     this.field("data");
     this.field("nome", { boost: 10 });
-    this.field("produtos");
+    this.field("produtos", { boost: 10 });
     this.field("local");
     this.field("telefone");
     this.field("entrega");
@@ -139,5 +127,7 @@ if (searchTerm) {
     let results = idx.search(searchTerm); // Get lunr to perform a search
     displaySearchResults(results, window.store); // We'll write this in the next section
   }
+} else {
+  displayItems(items);
 }
 // -- end search.js
