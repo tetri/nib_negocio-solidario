@@ -18,6 +18,28 @@
 </head>
 
 <body>
+  {% assign items = site.data.negocio-solidario | sort: "data" | reverse %}
+
+  <script type="text/javascript">
+    window.store = {
+      {% for item in items %}
+        "{{ item.nome | slugify }}": {
+          "data": "{{ item.data | xml_escape }}",
+          "nome": "{{ item.nome | xml_escape }}",
+          "produtos": {{ item.produtos | strip_html | strip_newlines | jsonify }},
+          "local": {{ item.local | strip_html | strip_newlines | jsonify }},
+          "telefone": "{{ item.telefone | xml_escape }}",
+          "entrega": "{{ item.entrega | xml_escape }}",
+          "link": "{{ item.link | xml_escape }}",
+          "ciente": "{{ item.ciente | xml_escape }}"
+        }
+        {% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    };
+
+    //console.debug('window.store', window.store);
+  </script>
+
   <style rel="stylesheet">
     .form-control-borderless {
       border: none;
@@ -50,7 +72,8 @@
   <div class="container-fluid">
     <div class="jumbotron">
       <h1 class="display-4">Negócio Solidário</h1>
-      <!--<p class="lead">A Nova Igreja Batista do Paraná, em seu esforço para cooperar no combate ao avanço da Covid-19,
+      <!--
+      <p class="lead">A Nova Igreja Batista do Paraná, em seu esforço para cooperar no combate ao avanço da Covid-19,
         mas também sensível à realidade das famílias que perderam total ou parcialmente suas fontes de renda, criou
         este formulário para que a comunidade tenha acesso à informação de irmãos e irmãs que podem fornecer
         qualquer tipo de produto ou serviço do qual estejam necessitando.</p>
@@ -61,7 +84,8 @@
       <p class="lead">
         <a class="btn btn-primary btn-lg" href="https://www.nibparana.org/" rel="alternate" role="button">Conheça a NIB
           Paraná</a>
-      </p>//--!>
+      </p>
+      //--!>
     </div>
 
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -81,7 +105,7 @@
           <div class="card-body row no-gutters align-items-center">
             <div class="col">
               <input id="search-box" name="query" class="form-control form-control-lg form-control-borderless"
-                type="search" placeholder="Pesquise por nome ou produtos" aria-label="Pesquise por nome ou produtos">
+                type="search" placeholder="Pesquise nome ou produtos de {{ items.size }} negócios cadastrados" aria-label="Pesquise por nome ou produtos">
             </div>
             <div class="col-auto">
               <button class="btn btn-lg btn-success" type="submit"><i class="fas fa-search"></i> Pesquisar</button>

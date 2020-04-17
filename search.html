@@ -8,25 +8,3 @@ title: "Resultados da pesquisa"
 
   <p><a href="{{ "/" | absolute_url }}">Mostrar todos os resultados</a></p>
 </section>
-
-{% assign items = site.data.negocio-solidario | sort: "data" | reverse %}
-
-<script type="text/javascript">
-  window.store = {
-    {% for item in items %}
-      "{{ item.nome | slugify }}": {
-        "data": "{{ item.data | xml_escape }}",
-        "nome": "{{ item.nome | xml_escape }}",
-        "produtos": {{ item.produtos | strip_html | strip_newlines | jsonify }},
-        "local": {{ item.local | strip_html | strip_newlines | jsonify }},
-        "telefone": "{{ item.telefone | xml_escape }}",
-        "entrega": "{{ item.entrega | xml_escape }}",
-        "link": "{{ item.link | xml_escape }}",
-        "ciente": "{{ item.ciente | xml_escape }}"
-      }
-      {% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  };
-
-  //console.debug('window.store', window.store);
-</script>
