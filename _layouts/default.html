@@ -21,7 +21,7 @@
   {% assign items = site.data.negocio-solidario | sort: "data" | reverse %}
 
   <script type="text/javascript">
-    window.store = {
+    items = {
       {% for item in items %}
         "{{ item.nome | slugify }}": {
           "data": "{{ item.data | xml_escape }}",
@@ -36,9 +36,9 @@
         {% unless forloop.last %},{% endunless %}
       {% endfor %}
     };
-    //console.debug('window.store', window.store);
+    console.debug('items', items);
 
-    items = {{ items | jsonify }};
+    //items = {{ items | strip_html | strip_newlines | jsonify }};
     //console.debug('items', items);
   </script>
 

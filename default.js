@@ -110,22 +110,22 @@ if (searchTerm) {
     this.field("ciente");
   });
 
-  for (let key in window.store) {
+  for (let key in items) {
     // Add the data to lunr
     idx.add({
       id: key,
-      data: window.store[key].data,
-      nome: window.store[key].nome,
-      produtos: window.store[key].produtos,
-      local: window.store[key].local,
-      telefone: window.store[key].telefone,
-      entrega: window.store[key].entrega,
-      link: window.store[key].link,
-      ciente: window.store[key].ciente,
+      data: items[key].data,
+      nome: items[key].nome,
+      produtos: items[key].produtos,
+      local: items[key].local,
+      telefone: items[key].telefone,
+      entrega: items[key].entrega,
+      link: items[key].link,
+      ciente: items[key].ciente,
     });
 
     let results = idx.search(searchTerm); // Get lunr to perform a search
-    displaySearchResults(results, window.store); // We'll write this in the next section
+    displaySearchResults(results, items); // We'll write this in the next section
   }
 } else {
   displayItems(items);
