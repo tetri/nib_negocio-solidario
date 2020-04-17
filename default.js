@@ -25,9 +25,11 @@ function montaCard(item) {
   if (item.telefone)
     card += `    <li class="list-group-item text-right">${item.telefone}</li>`;
 
-  card += '</ul><div class="card-body">';
+  card += '</ul>';
 
   if (item.link) {
+    card += '<div class="card-body">';
+
     if (item.link.startsWith("http")) {
       card += `    <a class="card-link" href="${item.link}" rel="noreferrer" title="${item.nome}" target="_blank">${item.link}</a>`;
     } else if (item.link.startsWith("www")) {
@@ -35,9 +37,9 @@ function montaCard(item) {
     } else {
       card += item.link;
     }
+    card += '</div>';
   }
 
-  card += "</div>";
   card += "</div>";
 
   return card;
