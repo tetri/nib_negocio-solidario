@@ -22,41 +22,104 @@ function montaCard(item) {
   if (item.local)
     card += `    <li class="list-group-item">${item.local} <a href="https://www.google.com/maps/search/${item.local}" rel="noreferrer" title="${item.local}" target="_blank" aria-label="ver no mapa"> <i class="fas fa-map-marker-alt"></i></a></li>`;
 
-  if (item.telefone)
-    card += `    <li class="list-group-item text-right">${item.telefone}</li>`;
+  if (item.telefone) {
+    card += '<li class="list-group-item text-right">';
 
-  card += '</ul>';
+    //console.debug('telefone', item.telefone);
+    let telefone = [];
+
+    item.telefone = item.telefone.replaceAll("-", "");
+    item.telefone = item.telefone.replaceAll("/", " ");
+    item.telefone = item.telefone.replaceAll("(45)", "45");
+    //item.telefone = item.telefone.replace('45 ', '45');
+    for (let str of item.telefone.split(" ")) {
+      if (!str) continue;
+
+      if (/\b\d{11}\b/g.test(str)) {
+        //telefone com 11 dígitos
+        console.debug("telefone com 11 dígitos: ", str);
+        telefone.push(
+          `<a href="tel:${str}" title="ligar para ${item.nome}">${str}</a>`
+        );
+        continue;
+      }
+
+      if (/\b\d{10}\b/g.test(str)) {
+        //telefone com 10 dígitos
+        console.debug("telefone com 10 dígitos: ", str);
+        telefone.push(
+          `<a href="tel:${str}" title="ligar para ${item.nome}">${str}</a>`
+        );
+        continue;
+      }
+
+      if (/\b\d{9}\b/g.test(str)) {
+        //telefone com 9 dígitos
+        console.debug("telefone com 9 dígitos: ", str);
+        telefone.push(
+          `<a href="tel:${str}" title="ligar para ${item.nome}">${str}</a>`
+        );
+        continue;
+      }
+
+      if (/\b\d{8}\b/g.test(str)) {
+        //telefone com 8 dígitos
+        console.debug("telefone com 8 dígitos: ", str);
+        telefone.push(
+          `<a href="tel:${str}" title="ligar para ${item.nome}">${str}</a>`
+        );
+        continue;
+      }
+
+      telefone.push(str);
+    }
+
+    card += telefone.join(" ");
+
+    card += "</li>";
+  }
+
+  card += "</ul>";
 
   if (item.link) {
     card += '<div class="card-body">';
 
     let link = [];
-    for (let str of item.link.split(' ')) {
-      if (!str)
-        continue;
+    for (let str of item.link.split(" ")) {
+      if (!str) continue;
 
       //console.debug('str in link', link)
       if (validURL(str)) {
-        if (str.startsWith('www'))
-          link.push(`<a class="card-link" href="http://${str}" rel="noreferrer" title="${item.nome}" target="_blank">${str}</a>`);
+        if (str.startsWith("www"))
+          link.push(
+            `<a class="card-link" href="http://${str}" rel="noreferrer" title="${item.nome}" target="_blank">${str}</a>`
+          );
         else
-          link.push(`<a class="card-link" href="${str}" rel="noreferrer" title="${item.nome}" target="_blank">${str}</a>`);
-        continue;
-      } 
-
-      if (validEmail(str)) {
-        link.push(`<a class="card-link" href="mailto:${str}" rel="noreferrer" title="${item.nome}">${str}</a>`);
+          link.push(
+            `<a class="card-link" href="${str}" rel="noreferrer" title="${item.nome}" target="_blank">${str}</a>`
+          );
         continue;
       }
 
-      if (str.startsWith('@')) 
-        link.push(`<a class="card-link" href="https://instagram.com/${str.replace('@', '')}" rel="noreferrer" title="${item.nome}" target="_blank">${str}</a>`);
-      else
-        link.push(str);
-    }
-    card += link.join(' ');
+      if (validEmail(str)) {
+        link.push(
+          `<a class="card-link" href="mailto:${str}" rel="noreferrer" title="${item.nome}">${str}</a>`
+        );
+        continue;
+      }
 
-    card += '</div>';
+      if (str.startsWith("@"))
+        link.push(
+          `<a class="card-link" href="https://instagram.com/${str.replace(
+            "@",
+            ""
+          )}" rel="noreferrer" title="${item.nome}" target="_blank">${str}</a>`
+        );
+      else link.push(str);
+    }
+    card += link.join(" ");
+
+    card += "</div>";
   }
 
   card += "</div>";
@@ -64,13 +127,20 @@ function montaCard(item) {
   return card;
 }
 
+String.prototype.replaceAll = function (f, r) {
+  return this.split(f).join(r);
+};
+
 function validURL(str) {
-  var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
-    '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
-    '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
-    '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
-    '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
-    '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+  var pattern = new RegExp(
+    "^(https?:\\/\\/)?" + // protocol
+    "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" + // domain name
+    "((\\d{1,3}\\.){3}\\d{1,3}))" + // OR ip (v4) address
+    "(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*" + // port and path
+    "(\\?[;&a-z\\d%_.~+=-]*)?" + // query string
+      "(\\#[-a-z\\d_]*)?$",
+    "i"
+  ); // fragment locator
   return !!pattern.test(str);
 }
 
