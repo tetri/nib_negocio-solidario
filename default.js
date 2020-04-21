@@ -1,3 +1,6 @@
+var paginas = []
+var paginaAtual = 0;
+
 window.addEventListener("load", () => {
   if ("serviceWorker" in navigator) {
     try {
@@ -37,7 +40,7 @@ function montaCard(item) {
 
       if (/\b\d{11}\b/g.test(str)) {
         //telefone com 11 dígitos
-        console.debug("telefone com 11 dígitos: ", str);
+        //console.debug("telefone com 11 dígitos: ", str);
         telefone.push(
           `<a href="tel:${str}" title="ligar para ${item.nome}">${str}</a>`
         );
@@ -46,7 +49,7 @@ function montaCard(item) {
 
       if (/\b\d{10}\b/g.test(str)) {
         //telefone com 10 dígitos
-        console.debug("telefone com 10 dígitos: ", str);
+        //console.debug("telefone com 10 dígitos: ", str);
         telefone.push(
           `<a href="tel:${str}" title="ligar para ${item.nome}">${str}</a>`
         );
@@ -55,7 +58,7 @@ function montaCard(item) {
 
       if (/\b\d{9}\b/g.test(str)) {
         //telefone com 9 dígitos
-        console.debug("telefone com 9 dígitos: ", str);
+        //console.debug("telefone com 9 dígitos: ", str);
         telefone.push(
           `<a href="tel:${str}" title="ligar para ${item.nome}">${str}</a>`
         );
@@ -64,7 +67,7 @@ function montaCard(item) {
 
       if (/\b\d{8}\b/g.test(str)) {
         //telefone com 8 dígitos
-        console.debug("telefone com 8 dígitos: ", str);
+        //console.debug("telefone com 8 dígitos: ", str);
         telefone.push(
           `<a href="tel:${str}" title="ligar para ${item.nome}">${str}</a>`
         );
@@ -110,10 +113,7 @@ function montaCard(item) {
 
       if (str.startsWith("@"))
         link.push(
-          `<a class="card-link" href="https://instagram.com/${str.replace(
-            "@",
-            ""
-          )}" rel="noreferrer" title="${item.nome}" target="_blank">${str}</a>`
+          `<a class="card-link" href="https://instagram.com/${str.replace("@","")}" rel="noreferrer" title="${item.nome}" target="_blank">${str}</a>`
         );
       else link.push(str);
     }
@@ -180,7 +180,8 @@ function displayItems(_items) {
     }
   }
 
-  document.getElementById("items").innerHTML = items;
+  //document.getElementById("items").innerHTML = items;
+  $("#items").append(items);
 }
 
 function getQueryVariable(variable) {
@@ -233,6 +234,34 @@ if (searchTerm) {
     displaySearchResults(results, window.store); // We'll write this in the next section
   }
 } else {
-  displayItems(items);
+  //displayItems(items);
+  
+  const chunkArr = (arr, chunkNo) => {
+    let newArr = [];
+    let len = arr.length;
+    for (let i = 0; i < len; i++) {
+      if (arr[0] !== "" && arr[0] !== undefined) {
+        let a = arr.splice(0, chunkNo);
+        newArr.push(a);
+      }
+    }
+    return newArr;
+  };
+
+  paginas = chunkArr(items, 9);
+  let a = paginas[paginaAtual];
+  //console.debug(paginaAtual, a);
+  displayItems(a);
 }
-// -- end search.js
+
+$(window).scroll(function () {
+  let pos = $(window).scrollTop();
+  let height = $(document).height() - $(window).height();
+  if (pos === height) {
+    if (paginas && paginas.length >= paginaAtual + 1) {
+      let a = paginas[paginaAtual++];
+      //console.debug(paginaAtual, a);
+      displayItems(a);
+    }
+  }
+});

@@ -13,6 +13,16 @@
 
   <link rel="manifest" href="manifest.json">
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+  <link rel="manifest" href="/assets/img/site.webmanifest">
+  <link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/assets/img/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
   <script type="text/javascript" src="{{ "/assets/js/lunr.min.js" | absolute_url }}" defer></script>
   <script type="text/javascript" src="{{ "/default.js" | absolute_url }}" defer></script>
 </head>
@@ -38,7 +48,7 @@
     };
     //console.debug('window.store', window.store);
 
-    items = [
+    var items = [
       {% for item in items %}
         {
           "data": "{{ item.data | xml_escape }}",

@@ -6,7 +6,7 @@
   "background_color": "#fff",
   "theme_color": "#fff",
   "description": "Apoio aos comerciantes, empreendedores e autônomos da Nova Igreja Batista",
-  "Scope": "/",
+  "Scope": "nib_negocio-solidario",
   "icons": [
     {
       "src": "assets/img/icon-72x72.png",
