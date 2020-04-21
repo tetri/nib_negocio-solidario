@@ -1,7 +1,7 @@
 {
   "name": "Negócio Solidário",
   "short_name": "Negócio Solidário",
-  "start_url": "/",
+  "start_url": "nib_negocio-solidario/index.html",
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#fff",
