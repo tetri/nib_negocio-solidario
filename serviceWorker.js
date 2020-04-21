@@ -1,9 +1,8 @@
 const staticAssets = [
-    './nib_negocio-solidario/',
-    './nib_negocio-solidario/index.html',
-    './nib_negocio-solidario/default.js',
-    './nib_negocio-solidario/assets/css/main.css',
-    './nib_negocio-solidario/favicon.ico',
+    './index.html',
+    './default.js',
+    './assets/css/main.css',
+    './favicon.ico',
 ];
 
 self.addEventListener('install', async event => {
