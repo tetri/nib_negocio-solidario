@@ -1,6 +1,17 @@
 var paginas = []
 var paginaAtual = 0;
 
+String.prototype.hashCode = function () {
+  var hash = 0;
+  if (this.length == 0) return hash;
+  for (i = 0; i < this.length; i++) {
+    char = this.charCodeAt(i);
+    hash = (hash << 5) - hash + char;
+    hash = hash & hash; // Convert to 32bit integer
+  }
+  return hash;
+};
+
 window.addEventListener("load", () => {
   if ("serviceWorker" in navigator) {
     try {
@@ -16,6 +27,7 @@ function montaCard(item) {
   let card =
     '<div class="card border-secondary mb-3">' +
     '<div class="card-body">' +
+    //`    <p>${item.data.toString().hashCode()}</p>` +
     `    <h5 class="card-title">${item.nome}</h5>`;
 
   if (item.produtos) card += `    <p class="card-text">${item.produtos}</p>`;
@@ -250,7 +262,7 @@ if (searchTerm) {
 
   paginas = chunkArr(items, 9);
   let a = paginas[paginaAtual];
-  //console.debug(paginaAtual, a);
+  console.debug(paginaAtual, a);
   displayItems(a);
 }
 
@@ -259,8 +271,9 @@ $(window).scroll(function () {
   let height = $(document).height() - $(window).height();
   if (pos === height) {
     if (paginas && paginas.length >= paginaAtual + 1) {
-      let a = paginas[paginaAtual++];
-      //console.debug(paginaAtual, a);
+      paginaAtual = paginaAtual + 1;
+      let a = paginas[paginaAtual];
+      console.debug(paginaAtual, a);
       displayItems(a);
     }
   }

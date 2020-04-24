@@ -32,6 +32,15 @@
   {% assign items = site.data.negocio-solidario | sort: "data" | reverse %}
 
   <script type="text/javascript">
+    //serviceWorkers.js
+    var staticAssets = [
+      '{{ "/index.html" | relative_url }}',
+      '{{ "/default.js" | relative_url }}',
+      '{{ "/assets/css/main.css" | relative_url }}',
+      '{{ "/favicon.ico" | relative_url }}',
+    ];
+    console.debug('staticAssets', staticAssets);
+
     window.store = {
       {% for item in items %}
         "{{ item.nome | slugify }}": {
@@ -128,7 +137,7 @@
     <a name="search"></a>
     <div class="row justify-content-center" style="margin-bottom: 1rem;">
       <div class="col-12">
-        <form class="card card-sm" action="{{ "/search.html#search" | absolute_url }}" method="get">
+        <form class="card border-secondary mb-3" action="{{ "/search.html#search" | absolute_url }}" method="get">
           <div class="card-body row no-gutters align-items-center">
             <div class="col">
               <input id="search-box" name="query" class="form-control form-control-lg form-control-borderless"
