@@ -1,12 +1,12 @@
 {
   "name": "Negócio Solidário",
   "short_name": "Negócio Solidário",
-  "start_url": "nib_negocio-solidario/index.html",
+  "start_url": "/nib_negocio-solidario/index.html",
+  "Scope": "/nib_negocio-solidario/",
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#fff",
   "description": "Apoio aos comerciantes, empreendedores e autônomos da Nova Igreja Batista",
-  "Scope": "nib_negocio-solidario",
   "icons": [
     {
       "src": "assets/img/icon-72x72.png",

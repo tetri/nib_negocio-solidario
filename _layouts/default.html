@@ -31,15 +31,6 @@
   {% assign items = site.data.negocio-solidario | sort: "data" | reverse %}
 
   <script type="text/javascript">
-    //serviceWorkers.js
-    var staticAssets = [
-      '{{ "/index.html" | relative_url }}',
-      '{{ "/default.js" | relative_url }}',
-      '{{ "/assets/css/main.css" | relative_url }}',
-      '{{ "/favicon.ico" | relative_url }}',
-    ];
-    //console.debug('staticAssets', staticAssets);
-
     var items = [
       {% for item in items %}
         {
