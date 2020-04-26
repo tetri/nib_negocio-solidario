@@ -2,4 +2,4 @@
 
 ::\venv\Scripts\activate
 
-py update.py
+::py update.py

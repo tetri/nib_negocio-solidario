@@ -1,5 +1,7 @@
-var paginas = []
+var paginas = [];
 var paginaAtual = 0;
+var mostrandoResultadosDePesquisa = false;
+var termoDePesquisa = "";
 
 String.prototype.hashCode = function () {
   var hash = 0;
@@ -125,7 +127,10 @@ function montaCard(item) {
 
       if (str.startsWith("@"))
         link.push(
-          `<a class="card-link" href="https://instagram.com/${str.replace("@","")}" rel="noreferrer" title="${item.nome}" target="_blank">${str}</a>`
+          `<a class="card-link" href="https://instagram.com/${str.replace(
+            "@",
+            ""
+          )}" rel="noreferrer" title="${item.nome}" target="_blank">${str}</a>`
         );
       else link.push(str);
     }
@@ -161,23 +166,6 @@ function validEmail(email) {
   return re.test(String(email).toLowerCase());
 }
 
-// -- search.js
-function displaySearchResults(results, store) {
-  let resultados = "<p>Nenhum resultado encontrado!</p>";
-
-  if (results.length) {
-    resultados = "";
-
-    for (let i = 0; i < results.length; i++) {
-      let item = store[results[i].ref];
-
-      resultados += montaCard(item);
-    }
-  }
-
-  document.getElementById("search-results").innerHTML = resultados;
-}
-
 function displayItems(_items) {
   let items = "<p>Nenhum item cadastrado!</p>";
 
@@ -192,8 +180,13 @@ function displayItems(_items) {
     }
   }
 
+  if (mostrandoResultadosDePesquisa) $("#items").empty();
+
   //document.getElementById("items").innerHTML = items;
   $("#items").append(items);
+
+  //TODO TETRI if (mostrandoResultadosDePesquisa)
+  //TODO TETRI
 }
 
 function getQueryVariable(variable) {
@@ -211,43 +204,8 @@ function getQueryVariable(variable) {
 
 let searchTerm = getQueryVariable("query");
 
-if (searchTerm) {
-  document.getElementById("search-box").setAttribute("value", searchTerm);
-
-  // Initalize lunr with the fields it will be searching on. I've given title
-  // a boost of 10 to indicate matches on this field are more important.
-  let idx = lunr(function () {
-    this.field("id");
-    this.field("data");
-    this.field("nome", { boost: 10 });
-    this.field("produtos", { boost: 10 });
-    this.field("local");
-    this.field("telefone");
-    this.field("entrega");
-    this.field("link");
-    this.field("ciente");
-  });
-
-  for (let key in window.store) {
-    // Add the data to lunr
-    idx.add({
-      id: key,
-      data: window.store[key].data,
-      nome: window.store[key].nome,
-      produtos: window.store[key].produtos,
-      local: window.store[key].local,
-      telefone: window.store[key].telefone,
-      entrega: window.store[key].entrega,
-      link: window.store[key].link,
-      ciente: window.store[key].ciente,
-    });
-
-    let results = idx.search(searchTerm); // Get lunr to perform a search
-    displaySearchResults(results, window.store); // We'll write this in the next section
-  }
-} else {
   //displayItems(items);
-  
+
   const chunkArr = (arr, chunkNo) => {
     let newArr = [];
     let len = arr.length;
@@ -260,21 +218,85 @@ if (searchTerm) {
     return newArr;
   };
 
+  let _items = items.slice();
+  //console.debug('items antes de paginar', items);
   paginas = chunkArr(items, 9);
+  items = _items;
+  //console.debug('items após paginar', items);
   let a = paginas[paginaAtual];
-  console.debug(paginaAtual, a);
+  //console.debug(paginaAtual, a);
   displayItems(a);
-}
 
 $(window).scroll(function () {
+  if (mostrandoResultadosDePesquisa) return;
+
   let pos = $(window).scrollTop();
   let height = $(document).height() - $(window).height();
   if (pos === height) {
     if (paginas && paginas.length >= paginaAtual + 1) {
       paginaAtual = paginaAtual + 1;
       let a = paginas[paginaAtual];
-      console.debug(paginaAtual, a);
+      //console.debug(paginaAtual, a);
       displayItems(a);
     }
   }
+});
+
+$(document).on("keyup", "#search-box", function (e) {
+  if (e.keyCode == 13) $("#pesquisar").click();
+});
+
+$(document).on("click", "#pesquisar", function () {
+  termoDePesquisa = $("#search-box").val().trim();
+  if (!termoDePesquisa) return;
+
+  //console.debug('items', items);
+  let term = termoDePesquisa.toUpperCase();
+
+  let resultados = [];
+  for (let item of items) {
+    //console.debug('item', item);
+    if (item.nome.toUpperCase().includes(term)) {
+      resultados.push(item);
+      continue;
+    }
+
+    if (item.produtos.toUpperCase().includes(term)) {
+      resultados.push(item);
+      continue;
+    }
+
+    if (item.local.toUpperCase().includes(term)) {
+      resultados.push(item);
+      continue;
+    }
+
+    if (item.telefone.toUpperCase().includes(term)) {
+      resultados.push(item);
+      continue;
+    }
+
+    if (item.link.toUpperCase().includes(term)) {
+      resultados.push(item);
+      continue;
+    }
+  }
+
+  mostrandoResultadosDePesquisa = true;
+  displayItems(resultados);
+  $("#mostrarTodos").parent().show();
+});
+
+$(document).on("click", "#mostrarTodos", function () {
+  mostrandoResultadosDePesquisa = false;
+  termoDePesquisa = "";
+  paginaAtual = 0;
+
+  window.scrollTo(0, 0);
+
+  $("#search-box").val("");
+  $("#items").empty();
+  displayItems(paginas[paginaAtual]);
+  $("#mostrarTodos").parent().hide();
+  return false;
 });
