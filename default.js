@@ -18,12 +18,18 @@ window.addEventListener("load", () => {
   if ("serviceWorker" in navigator) {
     try {
       navigator.serviceWorker.register("serviceWorker.js");
-      //console.log("Service Worker Registered");
+      //console.debug("Service Worker Registered");
     } catch (error) {
-      //console.log("Service Worker Registration Failed");
+      //console.debug("Service Worker Registration Failed");
     }
   }
 });
+
+function montaButton(item, total) {
+  return `<button type="button" class="btn btn-primary" style="margin-right: 1rem; margin-bottom: 1rem;">
+            ${item} <span class="badge badge-light">${total}</span> <span class="sr-only">itens nesta categoria</span>
+          </button>`;
+}
 
 function montaCard(item) {
   let card =
@@ -166,73 +172,72 @@ function validEmail(email) {
   return re.test(String(email).toLowerCase());
 }
 
+function displayCategories(_categories) {
+  let cats = "<p>Nenhuma categoria disponível!</p>";
+
+  if (Object.keys(_categories).length) {
+    cats = "";
+
+    for (var key in _categories) {
+      if (_categories.hasOwnProperty(key)) {           
+          console.debug(key, _categories[key]);
+
+          cats += montaButton(key, _categories[key]);
+      }
+    }
+  }
+
+  $("#categories").empty();
+  $("#categories").append(cats);
+}
+
 function displayItems(_items) {
   let items = "<p>Nenhum item cadastrado!</p>";
 
   if (_items.length) {
     items = "";
-
-    for (let i = 0; i < _items.length; i++) {
-      let item = _items[i];
-      //console.debug('item', item);
-
+    for (let item of _items) {
       items += montaCard(item);
     }
   }
 
   if (mostrandoResultadosDePesquisa) $("#items").empty();
 
-  //document.getElementById("items").innerHTML = items;
   $("#items").append(items);
-
-  //TODO TETRI if (mostrandoResultadosDePesquisa)
-  //TODO TETRI
 }
 
-function getQueryVariable(variable) {
-  let query = window.location.search.substring(1);
-  let vars = query.split("&");
-
-  for (let i = 0; i < vars.length; i++) {
-    let pair = vars[i].split("=");
-
-    if (pair[0] === variable) {
-      return decodeURIComponent(pair[1].replace(/\+/g, "%20"));
+const chunkArr = (arr, chunkNo) => {
+  let newArr = [];
+  let len = arr.length;
+  for (let i = 0; i < len; i++) {
+    if (arr[0] !== "" && arr[0] !== undefined) {
+      let a = arr.splice(0, chunkNo);
+      newArr.push(a);
     }
   }
+  return newArr;
+};
+
+let categorias = {};
+for (let item of items) {
+  if (categorias[item.categoria] > 0)
+    categorias[item.categoria] = categorias[item.categoria] + 1;
+  else categorias[item.categoria] = 1;
 }
+console.debug("categorias", categorias);
+displayCategories(categorias);
 
-let searchTerm = getQueryVariable("query");
-
-  //displayItems(items);
-
-  const chunkArr = (arr, chunkNo) => {
-    let newArr = [];
-    let len = arr.length;
-    for (let i = 0; i < len; i++) {
-      if (arr[0] !== "" && arr[0] !== undefined) {
-        let a = arr.splice(0, chunkNo);
-        newArr.push(a);
-      }
-    }
-    return newArr;
-  };
-
-  let _items = items.slice();
-  //console.debug('items antes de paginar', items);
-  paginas = chunkArr(items, 9);
-  items = _items;
-  //console.debug('items após paginar', items);
-  let a = paginas[paginaAtual];
-  //console.debug(paginaAtual, a);
-  displayItems(a);
+let _items = items.slice();
+paginas = chunkArr(items, 9);
+items = _items;
+displayItems(paginas[paginaAtual]);
 
 $(window).scroll(function () {
   if (mostrandoResultadosDePesquisa) return;
 
   let pos = $(window).scrollTop();
   let height = $(document).height() - $(window).height();
-  if (pos === height) {
+  if (pos > height - 20) {
     if (paginas && paginas.length >= paginaAtual + 1) {
       paginaAtual = paginaAtual + 1;
       let a = paginas[paginaAtual];

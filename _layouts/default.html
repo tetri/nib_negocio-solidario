@@ -41,7 +41,8 @@
           "telefone": "{{ item.telefone | xml_escape }}",
           "entrega": "{{ item.entrega | xml_escape }}",
           "link": "{{ item.link | xml_escape }}",
-          "ciente": "{{ item.ciente | xml_escape }}"
+          "ciente": "{{ item.ciente | xml_escape }}",
+          "categoria": "{{ item.categoria | xml_escape }}",
         }
         {% unless forloop.last %},{% endunless %}
       {% endfor %}
@@ -105,6 +106,9 @@
       <button type="button" class="close" data-dismiss="alert" aria-label="Fechar">
         <span aria-hidden="true">&times;</span>
       </button>
+    </div>
+
+    <div id="categories">
     </div>
 
     <a name="search"></a>
