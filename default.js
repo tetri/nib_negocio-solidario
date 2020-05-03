@@ -32,10 +32,12 @@ function montaButton(item, total) {
 }
 
 function montaCard(item) {
+  console.debug("item @ montaCard", item);
   let card =
     '<div class="card border-secondary mb-3">' +
     '<div class="card-body">' +
     //`    <p>${item.data.toString().hashCode()}</p>` +
+    `    <span class="badge badge-pill badge-primary btn-outline-primary float-right">${item.categoria}</span>` +
     `    <h5 class="card-title">${item.nome}</h5>`;
 
   if (item.produtos) card += `    <p class="card-text">${item.produtos}</p>`;
@@ -179,10 +181,10 @@ function displayCategories(_categories) {
     cats = "";
 
     for (var key in _categories) {
-      if (_categories.hasOwnProperty(key)) {           
-          console.debug(key, _categories[key]);
+      if (_categories.hasOwnProperty(key)) {
+        console.debug(key, _categories[key]);
 
-          cats += montaButton(key, _categories[key]);
+        cats += montaButton(key, _categories[key]);
       }
     }
   }
@@ -218,17 +220,38 @@ const chunkArr = (arr, chunkNo) => {
   return newArr;
 };
 
+function ordenarDicionarioPorChave(dict) {
+  let keys = Object.keys(dict);
+
+  let i,
+    len = keys.length;
+
+  keys.sort();
+
+  let sortedDict = {};
+
+  for (i = 0; i < len; i++) {
+    k = keys[i];
+    sortedDict[k] = dict[k];
+  }
+  
+  //console.debug('sortedDict', sortedDict);
+  return sortedDict;
+}
+
 let categorias = {};
 for (let item of items) {
   if (categorias[item.categoria] > 0)
     categorias[item.categoria] = categorias[item.categoria] + 1;
   else categorias[item.categoria] = 1;
 }
-console.debug("categorias", categorias);
+//console.debug("categorias", categorias);
+categorias = ordenarDicionarioPorChave(categorias);
 displayCategories(categorias);
 
 let _items = items.slice();
 paginas = chunkArr(items, 9);
+//console.debug('paginas', paginas);
 items = _items;
 displayItems(paginas[paginaAtual]);
 
