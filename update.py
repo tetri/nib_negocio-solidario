@@ -17,7 +17,7 @@ with open('_data/negocio-solidario.csv', mode='w', encoding='utf-8', newline='\n
     w.writerow(['data','linha','categoria','nome','produtos','local','telefone','entrega','link','ciente'])
 
     idx = 1
-    duplicados = [0,1,2,39,41,64,70,101,132]
+    duplicados = [0,1,2,39,41,43,64,70,101,132]
     for i, row in enumerate(cr):
         if (i in duplicados):
             continue
