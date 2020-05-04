@@ -2,5 +2,5 @@
 
 ::\venv\Scripts\activate
 
-::py update.py
-::py send.py
+py update.py
+py send.py
