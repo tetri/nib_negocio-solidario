@@ -234,7 +234,7 @@ function ordenarDicionarioPorChave(dict) {
     k = keys[i];
     sortedDict[k] = dict[k];
   }
-  
+
   //console.debug('sortedDict', sortedDict);
   return sortedDict;
 }
@@ -355,7 +355,8 @@ function filtrarPorCategoria(categoria) {
   $("#mostrarTodos").parent().show();
 }
 
-$(document).on('click', '.categoria', function() {
-  filtrarPorCategoria($(this).data('categoria'));
+$(document).on("click", ".categoria", function () {
+  if (mostrandoResultadosDePesquisa) $("#search-box").val("");
+  filtrarPorCategoria($(this).data("categoria"));
   return false;
 });
