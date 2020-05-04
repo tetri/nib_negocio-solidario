@@ -26,18 +26,18 @@ window.addEventListener("load", () => {
 });
 
 function montaButton(item, total) {
-  return `<button type="button" class="btn btn-primary" style="margin-right: 1rem; margin-bottom: 1rem;">
+  return `<button type="button" class="btn btn-primary categoria" style="margin-right: 1rem; margin-bottom: 1rem;" data-categoria="${item}">
             ${item} <span class="badge badge-light">${total}</span> <span class="sr-only">itens nesta categoria</span>
           </button>`;
 }
 
 function montaCard(item) {
-  console.debug("item @ montaCard", item);
+  //console.debug("item @ montaCard", item);
   let card =
     '<div class="card border-secondary mb-3">' +
     '<div class="card-body">' +
     //`    <p>${item.data.toString().hashCode()}</p>` +
-    `    <span class="badge badge-pill badge-primary btn-outline-primary float-right">${item.categoria}</span>` +
+    `    <span class="badge badge-pill badge-primary float-right">${item.categoria}</span>` +
     `    <h5 class="card-title">${item.nome}</h5>`;
 
   if (item.produtos) card += `    <p class="card-text">${item.produtos}</p>`;
@@ -182,7 +182,7 @@ function displayCategories(_categories) {
 
     for (var key in _categories) {
       if (_categories.hasOwnProperty(key)) {
-        console.debug(key, _categories[key]);
+        //console.debug(key, _categories[key]);
 
         cats += montaButton(key, _categories[key]);
       }
@@ -284,6 +284,11 @@ $(document).on("click", "#pesquisar", function () {
   let resultados = [];
   for (let item of items) {
     //console.debug('item', item);
+    if (item.categoria.toUpperCase().includes(term)) {
+      resultados.push(item);
+      continue;
+    }
+
     if (item.nome.toUpperCase().includes(term)) {
       resultados.push(item);
       continue;
@@ -326,5 +331,31 @@ $(document).on("click", "#mostrarTodos", function () {
   $("#items").empty();
   displayItems(paginas[paginaAtual]);
   $("#mostrarTodos").parent().hide();
+  return false;
+});
+
+function filtrarPorCategoria(categoria) {
+  termoDePesquisa = categoria.trim();
+  if (!termoDePesquisa) return;
+
+  //console.debug('items', items);
+  let term = termoDePesquisa.toUpperCase();
+
+  let resultados = [];
+  for (let item of items) {
+    //console.debug('item', item);
+    if (item.categoria.toUpperCase().includes(term)) {
+      resultados.push(item);
+      continue;
+    }
+  }
+
+  mostrandoResultadosDePesquisa = true;
+  displayItems(resultados);
+  $("#mostrarTodos").parent().show();
+}
+
+$(document).on('click', '.categoria', function() {
+  filtrarPorCategoria($(this).data('categoria'));
   return false;
 });
