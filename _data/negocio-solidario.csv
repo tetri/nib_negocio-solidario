@@ -1,10 +1,10 @@
 data,categoria,nome,produtos,local,telefone,entrega,link,ciente
 09/04/2020 20:32:32,Serviços de Saúde,Psicóloga Bruna Borges,Terapia presencial ou online,"Rua Riachuelo 2119, Centro - Cascavel",45-99917-5806,SIM,@psico.brunaborges,Estou ciente.
-09/04/2020 20:57:11,Sem categoria,Bond-Gas Anderson,Revendedor gás de cozinha ou glp,,32278000 999255989,SIM,,Estou ciente.
+09/04/2020 20:57:11,Serviços e Manutenção,Bond-Gas Anderson,Revendedor gás de cozinha ou glp,,32278000 999255989,SIM,,Estou ciente.
 09/04/2020 20:57:37,Serviços Jurídicos,AK assessoria e Consultoria juridica ,Advocacia e Consultoria Jurídica personalizada ,"Rua Olavo Bilac, 1709C",45998014331,NÃO,Rua Alberi Antônio Richardi,Estou ciente.
 09/04/2020 20:57:59,Serviços de Saúde,Psicóloga Tatiane Campestrini Chuai ,"Psicoterapia presencial ou on-line para Adultos, Jovens, Crianças, Casais e Famílias ","Rua Paraná 3033, 14 andar, sala 402, Edifício Formato, Centro",(45) 99851-8344,SIM,@psicotatianecampestrinichuai,Estou ciente.
 09/04/2020 20:58:58,Beleza e Estética,Michelle,Cabeleireira e Maquiadora,Studio Lu Pazeli,45 999531954,NÃO,@michellecavalcantiii,Estou ciente.
-09/04/2020 20:59:25,Sem categoria,Z PERSONALIZADOS,"Máscaras, produtos personalizados em geral ",Rua alberi antonio Richard 190,44998047719,SIM,@z.personalizados,Estou ciente.
+09/04/2020 20:59:25,Artesanato,Z PERSONALIZADOS,"Máscaras, produtos personalizados em geral ",Rua alberi antonio Richard 190,44998047719,SIM,@z.personalizados,Estou ciente.
 09/04/2020 21:02:56,Construção Civil,Juliano Oliveira Construtor,"Mão de obra especializada em construção ou reforma, de serviço em alvenaria. Elétrica, hidráulica, assentamento de pisos em porcelanato, cobertura e construções em geral.",Rua Gênova 439,45 999151198,SIM,,Estou ciente.
 09/04/2020 21:07:11,Moda e Confecção,UP KIDS Moda Infantil,"Confecções Bebê,Infantil e Juvenil.
 Toda linha de mamadeira,chupetas e acessórios Lillo e Nuk.",cascavel,45 999189094,SIM,@modainfantilupkids,Estou ciente.
@@ -21,7 +21,7 @@ Toda linha de mamadeira,chupetas e acessórios Lillo e Nuk.",cascavel,45 9991890
 09/04/2020 21:31:21,Seguros,Cw Brasil corretora de seguros,"Seguros automóvel, residencia e de vida",Rua Visc Rio Branco 3093,99978-0046,NÃO,,Estou ciente.
 09/04/2020 21:32:37,Alimentação,Marli massas,"Agnoline, pão caseiro, massas",Rua General Osório 1947 fundos,99952-8273,NÃO,,Estou ciente.
 09/04/2020 21:33:07,Serviços e Manutenção,Dal Pisol soluções eletricas,"Serviços elétricos prediais , industrial e energia fotovoltaica (solar)",Cascavel,45 999073407,SIM,https://dalpisolsolucoeseletricas.negocio.site,Estou ciente.
-09/04/2020 21:33:14,Sem categoria,Embalgraph Embalagens,Embalagens de papel e gráfica,"Rua Gandhi, 373, Brazmadeira",45 3323-1458,SIM,vendas@embalgraph.com,Estou ciente.
+09/04/2020 21:33:14,Comunicação Visual,Embalgraph Embalagens,Embalagens de papel e gráfica,"Rua Gandhi, 373, Brazmadeira",45 3323-1458,SIM,vendas@embalgraph.com,Estou ciente.
 09/04/2020 21:35:23,Serviços de Saúde,Consultório odontológico - Ortosaude,Tratamentos dentários ,Rua Rio de Janeiro 1355 - esquina com 7 de setembro - centro,9.8812-3575,NÃO,https://instagram.com/ortosaude_?igshid=1gx7zzer611so,Estou ciente.
 09/04/2020 21:35:41,Fotografia,Geverson Kloster fotografias,Fotografias,,45 999438440,SIM,@geversonklosterfotografias,Estou ciente.
 09/04/2020 21:39:57,Educação,Nosso Livrinho,Livros infantis com princípios cristão,,45998068402,SIM,@nossolivrinho - Instagram,Estou ciente.
@@ -29,7 +29,7 @@ Toda linha de mamadeira,chupetas e acessórios Lillo e Nuk.",cascavel,45 9991890
 09/04/2020 21:44:41,Beleza e Estética,BFF ESTUDIO DE BELEZA ,"Maquiagens, penteados, tratamentos capilares, manicure e pedicure, alongamento de unhas em acrílico, extensão de cílios, design de sobrancelhas ",Rua general Osório 2430 ,45 99972-1545,NÃO,Instagram.com/bffestudiodebeleza ,Estou ciente.
 09/04/2020 21:45:07,Serviços Automotivos,Lava Car Pingo D'água Lubrificantes,"Lavagem, Troca de Óleo, Higienização, Polimento, Higienização de Ar Condicionado, etc","Rua Vitória, 770",45999883377,SIM,www.lavacarpingodagua.com.br,Estou ciente.
 09/04/2020 21:45:48,Alimentação,BOCCATA CAFÉ & CUCCINA ,"Pratos a La Carte, Tortas, Salgados, Lanches, Sopas, Batata Suiça, Encomendas de Empadões, Escondidinhos, Pães caseiros e Lasanhas. Todas essas e outras opções estão disponíveis em nosso cardápio na página do Instagram (@boccata.cascavel) e Facebook https://www.facebook.com/boccata.caffe.1","Botelho Open Mall, R. Treze de Maio, 1090 - Centro, Cascavel - PR, 85812-210",(45)9 88247996 e (45) 3015-2001,SIM,https://instagram.com/boccata.cascavel?igshid=192hovkajhkij e https://www.facebook.com/boccata.caffe.1 ,Estou ciente.
-09/04/2020 21:46:57,Sem categoria,Stella Presentes,"Produtos de utilidades, armarinhos em geral",Rua Carlos Gomes  3136 box 09,45 999416471,SIM,Instagram Stella Presentes,Estou ciente.
+09/04/2020 21:46:57,Artesanato,Stella Presentes,"Produtos de utilidades, armarinhos em geral",Rua Carlos Gomes  3136 box 09,45 999416471,SIM,Instagram Stella Presentes,Estou ciente.
 09/04/2020 21:54:03,Alimentação,Denastoc Distribuidora,Alimentos e Limpeza,"Rua Celso esperança, 90 - Pq São Paulo",45 98821-9188 / 3306-6500,SIM,https://www.instagram.com/denastoc.distribuidora,Estou ciente.
 09/04/2020 22:03:44,Organização,Personal Organizer ,Organização profissional de casas e empresas,Cascavel e região ,45998263667,SIM,@danielebfagundes,Estou ciente.
 09/04/2020 22:05:20,Moda e Confecção,Sara Welker Kimonos,Moda feminina/terceira peça,,45 99959-9512,SIM,Facebook:@swkimonos insta: https://instagram.com/sara_welker_kimonos?igshid=7n74cx4djvfz,Estou ciente.
@@ -46,7 +46,7 @@ Toda linha de mamadeira,chupetas e acessórios Lillo e Nuk.",cascavel,45 9991890
 09/04/2020 23:13:52,Alimentação,Apetitoso lanches ,Lanches ,Rua Custódio Mesquita 407 Consolata ,45998510084,SIM,Apetitoso Lanches,Estou ciente.
 09/04/2020 23:16:11,Consultoria,Delair Borges,Consultoria VIP para Comunicação em Público / Análise da Comunicação Pessoal com PNL ,,99929-7852,SIM,Instagram @profdelair,Estou ciente.
 09/04/2020 23:37:09,Serviços e Manutenção,PETER PINTURAS,"Patologias, efeitos decorativos, fino acabamento",Av. Dr. EZUEL PORTES 16581,45.999.885.813,SIM,Peter Peres de Lima,Estou ciente.
-09/04/2020 23:38:24,Sem categoria,Carlos Eduardo Fagundes,"Design gráfico online e off line, estratégias de marca, campanhas",Nacional ,11-992703736,SIM,@studiomonto,Estou ciente.
+09/04/2020 23:38:24,Comunicação Visual,Carlos Eduardo Fagundes,"Design gráfico online e off line, estratégias de marca, campanhas",Nacional ,11-992703736,SIM,@studiomonto,Estou ciente.
 09/04/2020 23:39:48,Organização,Daniele Fagundes,Organização profissional ,Cascavel e Região ,45-99826-3667,SIM,@danielebfagundes,Estou ciente.
 10/04/2020 00:01:58,Beleza e Estética,Eliz Martins-Estética e Cosmética,Tratamento corporal e facial-vendas de produtos e cosméticos,"Rua tranquilo noro,642 casa 176 Parque verde",45984059046,SIM,Instagran : eliz.esthetic,Estou ciente.
 10/04/2020 00:30:21,Beleza e Estética,Gugu Hair. Dilseu lorenzatto,Mega Hair  ( cabelos para Mega Hair),"Rua Santa Helena n° 30
@@ -124,7 +124,7 @@ Estética Corporal e Facial  / Cursos e Palestras / Massagem Empresarial / Giná
 11/04/2020 13:20:41,Moda e Confecção,Mulher Virtuosa,"Brechó, lingeries e cosméticos ","Rua: VISCONDE DO RIO BRANCO,665 NEVA",(45) 99803-0031,SIM,lojamulhervirtuosa_cascavel,
 11/04/2020 13:27:15,Serviços Automotivos,Biel auto mecanica ,"Mecânica geral, motor, suspensão, freios, embreagens, caixa de câmbio, troca de óleo e filtros, higienização de ar condicionado.",Rua presidente Kennedy 1092 - centro ,45 3225-3282,NÃO,Instagram e Facebook @bielautomecanica,
 11/04/2020 15:27:14,Moda e Confecção,Gilmar Pedro Carvalho,Comércio de roupas masculinas e femininas,"Rua Europa, 1596, período, Cascavel PR",45998304237,SIM,@favori.modas,
-11/04/2020 20:53:26,Sem categoria,Óticas Precisão ,"Óculos, relógios, semi joias e alianças. ",Av Brasil 6136 ,45 32232616,SIM,www.oticasprecisao.com.br,
+11/04/2020 20:53:26,Beleza e Estética,Óticas Precisão ,"Óculos, relógios, semi joias e alianças. ",Av Brasil 6136 ,45 32232616,SIM,www.oticasprecisao.com.br,
 12/04/2020 17:26:27,Serviços de Saúde,Psicóloga Camila Pusebon Müller,"Terapia presencial ou online: individual, casal e família.","Rua Presidente Bernardes, 2009 ",45 99917-9157,SIM,https://instagram.com/psicologacamilapmuller?igshid=fnz340avob13,
 12/04/2020 17:30:14,Serviços Automotivos,Mecânica Thurenzo ,"Mecânica em geral 
 câmbio automático 
@@ -156,7 +156,7 @@ injeção eletrônica ",voluntários da Pátria 1330,45 33065707,SIM,thurenzo.ce
 13/04/2020 09:58:52,Sem categoria,Clarisse de freitas,Sabão de álcool líquido e em pedra,R chopinzinho N70 Parque dos Ipês ,(45)991164673,NÃO,,
 13/04/2020 10:09:32,Serviços e Manutenção,R LIMA Soluções para Interiores,Móveis sobre medida,Parque São Paulo,45 99947-3912,SIM,,
 13/04/2020 10:49:21,Alimentação,Barbara Delícias Caseiras ,Biscoito sem glúten e sem lactose ... bolachinha caseiras diversas  / goiaba /ganache/ doce de leite (moça cozido ).,Rua Saul Mário caus 298 Esmeralda  Cascavel cp da rua 85806766,45 998049662,NÃO,Barbara delícias caseiras ( Instagram e página ) Barbara Telles ( fecebuk),
-13/04/2020 11:11:24,Sem categoria,Kumon unidade Neva,"Estudo individualizado de Matemática, Português e Inglês ",Rua Pio XII 1589 - Sala 10 - Neva ,(45) 99111-4471 e (45) 99139-8583 ,SIM, @kumonneva no Instagram e Kumon Neva no Facebook ,
+13/04/2020 11:11:24,Educação,Kumon unidade Neva,"Estudo individualizado de Matemática, Português e Inglês ",Rua Pio XII 1589 - Sala 10 - Neva ,(45) 99111-4471 e (45) 99139-8583 ,SIM, @kumonneva no Instagram e Kumon Neva no Facebook ,
 13/04/2020 11:15:29,Serviços Jurídicos,VM SUPORTE E ASSESSORIA DOCUMENTAL,"contratos, autorizações, declarações, procurações, requerimentos, documentos em geral","rua Souza Naves, 3478, sala 2",45 99971-8118,NÃO,https://www.facebook.com/vmassessoriadocumental/,
 13/04/2020 11:17:57,Consórcios,Consórcio Araucária (lance representações),Consórcio,Av brasil 2962 - sala 07 - são Cristóvão ( Shopping West side) ,(45)99957-2800,NÃO,https://www.facebook.com/lancesonorcioaraucaria/,
 13/04/2020 11:50:40,Comunicação Visual,Dal'maso Motion Design,Animações publicitárias para redes sociais e TV. ,,(45) 99953.6814,NÃO,https://www.instagram.com/dalmasomotiondesign/,
@@ -169,7 +169,7 @@ injeção eletrônica ",voluntários da Pátria 1330,45 33065707,SIM,thurenzo.ce
 (em frente a biblioteca Municipal )",99856-0607 ou 3040-0800,SIM,@gratsstore ,
 13/04/2020 14:31:49,Serviços Contábeis,Solidcont Serviços Contábeis,Serviços Contábeis,,45999622633,NÃO,@solidcont.contabilidade,
 13/04/2020 14:35:03,Casa e Decoração,LOJAS ECODECOR,REVESTIMENTOS DECORATIVOS DE PAREDE (PAPEL DE PAREDE LÍQUIDO),"RUA RIO DE JANEIRO, 1391, CENTRO",(45) 99814 0123 ,SIM,https://www.instagram.com/ecodecorcascavel/,
-13/04/2020 15:19:41,Sem categoria,JULIANO,"PLACAS EVAPORATIVAS (COLMÉIAS), PARA CLIMATIZADORES E CLIMATIZAÇÃO DE AVIÁRIOS, INDUSTRIAS, ETC","RUA CRISTOVÃO COLOMBO, 260 - PIONEIROS CATARINENSE",999790101,NÃO,,
+13/04/2020 15:19:41,Serviços e Manutenção,JULIANO,"PLACAS EVAPORATIVAS (COLMÉIAS), PARA CLIMATIZADORES E CLIMATIZAÇÃO DE AVIÁRIOS, INDUSTRIAS, ETC","RUA CRISTOVÃO COLOMBO, 260 - PIONEIROS CATARINENSE",999790101,NÃO,,
 13/04/2020 15:33:34,Artesanato,Encantare artes ,"Caneca,camiseta, máscara,casinha de boneca,chaveiro,porta retrato,e vários produtos q posso personalizar com sua logo ou estampa de sua preferência,também temos roupas femininas e moda executiva",Rua Áustria 799 ,45999755732,SIM,Jd Veneza,
 13/04/2020 19:28:13,Moda e Confecção,Rafeni Uniformes,Uniformes Empresariais em geral.,"Rua Souza Naves, 577 - PQ São Paulo.",(45) 3097-0886,SIM,www.facebook.com/rafeniuniformes,
 13/04/2020 20:51:03,Serviços e Manutenção,Ismael Marchiore,"Pintura, lavagem de telhado ","Rua Arlindo Oscar Careli, 938",45991093688,SIM,Edinalva Edi,
@@ -212,8 +212,8 @@ Temos toda  linha para banho e tosa, além de produtos para uso doméstico, tais
 26/04/2020 09:06:05,Serviços e Manutenção,ROCHATECH SERVIÇOS,Instalação e manutenção de portões eletrônicos.,Rua Krahos 663,45 999922052,SIM,https://www.facebook.com/rochatechservicos/,
 28/04/2020 21:16:20,Artesanato,BATISTEL JOALHEIROS,Venda e confecção de jóias,Rua Paraná 2361,98404-6111,SIM,batisteljoalheiros@hotmail.com,
 29/04/2020 20:41:06,Moda e Confecção,Infinity JPrado,Moda Fitness / Casual,"Academia Fitness Express (Rua Visconde Guarapuava, 1337 - esquina rua Maranhão)",45 99954.2411,SIM, Roseli Norato Corso (Facebook) e Infinity (Instagram),
-05/05/2020 09:06:45,Sem categoria,Laços LaJu  (Elaine),"Laços de cabelo, tiaras,faixas de bebê, amarradores","Rua Tranquilo Noro, 642 casa 407 condomínio Terra Nova 3 Parque Verde",(45) 991450795,SIM,Instagram: Elaine Gauer/ Facebook:@Laçosdalaine,
-05/05/2020 11:21:00,Sem categoria,JE Telecom - VIVO FIBRA EMPRESAS AUTORIZADA ,"Consutores de vendas: Elio e Josiane
+05/05/2020 09:06:45,Artesanato,Laços LaJu  (Elaine),"Laços de cabelo, tiaras,faixas de bebê, amarradores","Rua Tranquilo Noro, 642 casa 407 condomínio Terra Nova 3 Parque Verde",(45) 991450795,SIM,Instagram: Elaine Gauer/ Facebook:@Laçosdalaine,
+05/05/2020 11:21:00,Serviços e Manutenção,JE Telecom - VIVO FIBRA EMPRESAS AUTORIZADA ,"Consutores de vendas: Elio e Josiane
 Serviços de telefonia Vivo Empresas,  VIVO FIBRA
 Telefônia Fixa , Internet e Móvel , para sua Empresa e residência.
  Seu negócio com Hiperconexão!  Vivo -Link dedicado internet banda garantida , link DDR,
@@ -223,9 +223,9 @@ INTERNET FIBRA 100MB  e 300MB... consulte a disponibilidade de seu endereço.
 
 ","R : Pernambuco 3561 
 Atendemos Cascavel e Brasil ",  45 3039-5868   / 45991341504  Elio  / 45 991341506  Josiane   fone Whats,SIM,  @ josy_cristinah               E-mail:  josiane.cristina@vivo@gmail.com ,
-09/05/2020 09:42:00,Sem categoria,Romance moda,Procuro revendedoras  de lingerie e moda fitness peças na condicional ,Prox da havam do centro ,45 999832999,NÃO,https://www.facebook.com/romancemodaoficial/,
-09/05/2020 17:28:19,Sem categoria,Jotas Barbearia,Barbearia,"Avenida Brasil, 4417",45999201446,NÃO,@jotas.barbearia,
-09/05/2020 21:28:36,Sem categoria,Débora Jurkevicz da Silva,"Advogada, direito educacional, cível e família ","Avenida Brasil, 10012, Coqueiral",45 99974-3289,NÃO,,
-11/05/2020 12:39:15,Sem categoria,Barão Cafeeiro - Cafeteria,"Cafés Tradicionais, Espressos moído na hora, Cafés Gourmet, Salgados e Doces e um bom lugar aconchegante para conversar e confraternizar","Av. Brasil 5216, próximo ao Hotel Grand Prix",45 99982- 8770,NÃO,https://www.instagram.com/baraocafeeirocascavel,
+09/05/2020 09:42:00,Moda e Confecção,Romance moda,Procuro revendedoras  de lingerie e moda fitness peças na condicional ,Prox da havam do centro ,45 999832999,NÃO,https://www.facebook.com/romancemodaoficial/,
+09/05/2020 17:28:19,Beleza e Estética,Jotas Barbearia,Barbearia,"Avenida Brasil, 4417",45999201446,NÃO,@jotas.barbearia,
+09/05/2020 21:28:36,Serviços Jurídicos,Débora Jurkevicz da Silva,"Advogada, direito educacional, cível e família ","Avenida Brasil, 10012, Coqueiral",45 99974-3289,NÃO,,
+11/05/2020 12:39:15,Alimentação,Barão Cafeeiro - Cafeteria,"Cafés Tradicionais, Espressos moído na hora, Cafés Gourmet, Salgados e Doces e um bom lugar aconchegante para conversar e confraternizar","Av. Brasil 5216, próximo ao Hotel Grand Prix",45 99982- 8770,NÃO,https://www.instagram.com/baraocafeeirocascavel,
 11/05/2020 15:23:28,Sem categoria,Agua Magnetizada,"SYLOCIMOL,TOPH,Pulseiras com infravermelho Longo","Rua Tarquinio Joslim Santos,335",45 999556717,SIM,Whats 45 999556717,
-12/05/2020 17:42:09,Sem categoria,O Costeleiro ,Carne assada com acompanhamentos ,"Rua Manaus, 1250",(45)9 9135-2025,SIM,https://www.facebook.com/O-Costeleiro-105283864480276/,
+12/05/2020 17:42:09,Alimentação,O Costeleiro ,Carne assada com acompanhamentos ,"Rua Manaus, 1250",(45)9 9135-2025,SIM,https://www.facebook.com/O-Costeleiro-105283864480276/,
