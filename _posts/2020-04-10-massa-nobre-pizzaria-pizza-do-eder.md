@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'Massa Nobre Pizzaria - Pizza do Eder'
-date: '2020-04-10 15:16:46 '
-categories: 'Alimentação'
+layout: post
+title: Massa Nobre Pizzaria - Pizza do Eder
+date: 2020-04-10 15:16:46 
+categories: Alimentação
 ---
 
 # Massa Nobre Pizzaria - Pizza do Eder

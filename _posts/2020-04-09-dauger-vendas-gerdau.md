@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'Dauger vendas Gerdau'
-date: '2020-04-09 22:40:32 '
-categories: 'Serviços e Manutenção'
+layout: post
+title: Dauger vendas Gerdau
+date: 2020-04-09 22:40:32 
+categories: Serviços e Manutenção
 ---
 
 # Dauger vendas Gerdau

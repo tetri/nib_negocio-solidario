@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'CASA DOS COSMÉTICOS'
-date: '2020-06-09 12:48:12 '
-categories: 'Beleza e Estética'
+layout: post
+title: CASA DOS COSMÉTICOS
+date: 2020-06-09 12:48:12 
+categories: Beleza e Estética
 ---
 
 # CASA DOS COSMÉTICOS

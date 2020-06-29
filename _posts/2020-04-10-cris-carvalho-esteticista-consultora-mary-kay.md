@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'Cris Carvalho Esteticista / Consultora Mary Kay'
-date: '2020-04-10 09:28:54 '
-categories: 'Beleza e Estética'
+layout: post
+title: Cris Carvalho Esteticista / Consultora Mary Kay
+date: 2020-04-10 09:28:54 
+categories: Beleza e Estética
 ---
 
 # Cris Carvalho Esteticista / Consultora Mary Kay

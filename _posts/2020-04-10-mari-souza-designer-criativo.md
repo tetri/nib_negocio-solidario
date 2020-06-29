@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'Mari souza designer criativo '
-date: '2020-04-10 06:24:03 '
-categories: 'Alimentação'
+layout: post
+title: Mari souza designer criativo 
+date: 2020-04-10 06:24:03 
+categories: Alimentação
 ---
 
 # Mari souza designer criativo 

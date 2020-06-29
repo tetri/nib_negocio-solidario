@@ -14,4 +14,4 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-permalink: /:title
+permalink: /negocios/:title

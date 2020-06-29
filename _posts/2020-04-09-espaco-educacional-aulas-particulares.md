@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'ESPAÇO EDUCACIONAL - AULAS PARTICULARES '
-date: '2020-04-09 22:12:21 '
-categories: 'Educação'
+layout: post
+title: ESPAÇO EDUCACIONAL - AULAS PARTICULARES 
+date: 2020-04-09 22:12:21 
+categories: Educação
 ---
 
 # ESPAÇO EDUCACIONAL - AULAS PARTICULARES 

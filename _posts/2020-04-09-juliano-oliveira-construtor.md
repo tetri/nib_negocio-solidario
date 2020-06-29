@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'Juliano Oliveira Construtor'
-date: '2020-04-09 21:02:56 '
-categories: 'Construção Civil'
+layout: post
+title: Juliano Oliveira Construtor
+date: 2020-04-09 21:02:56 
+categories: Construção Civil
 ---
 
 # Juliano Oliveira Construtor

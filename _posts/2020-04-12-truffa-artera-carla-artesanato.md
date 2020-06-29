@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'Truffa Artera (Carla - Artesanato)'
-date: '2020-04-12 18:44:11 '
-categories: 'Artesanato'
+layout: post
+title: Truffa Artera (Carla - Artesanato)
+date: 2020-04-12 18:44:11 
+categories: Artesanato
 ---
 
 # Truffa Artera (Carla - Artesanato)

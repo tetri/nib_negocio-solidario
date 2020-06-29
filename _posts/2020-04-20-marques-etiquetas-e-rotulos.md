@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'MARQUES ETIQUETAS E RÓTULOS '
-date: '2020-04-20 17:31:40 '
-categories: 'Comunicação Visual'
+layout: post
+title: MARQUES ETIQUETAS E RÓTULOS 
+date: 2020-04-20 17:31:40 
+categories: Comunicação Visual
 ---
 
 # MARQUES ETIQUETAS E RÓTULOS 

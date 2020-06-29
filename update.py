@@ -38,20 +38,23 @@ with open('_data/negocio-solidario.csv', mode='w', encoding='utf-8', newline='\n
 
         data = datetime.strptime(row[0],'%d/%m/%Y %H:%M:%S')
         _data = data.strftime('%Y-%m-%d')
-        __data = data.strftime('%Y-%m-%d %H:%M:%S %z')
         #print(data)
 
         slug = slugify(row[2])
         #print (slug)
 
+        post_title = row[2] #.replace('\'','\\\'')
+        post_date = data.strftime('%Y-%m-%d %H:%M:%S %z')
+        post_categories = row[1]
+
         #print(f'_posts/{data}_{slug}.md')
 
         with open(f'_posts/{_data}-{slug}.md', mode='w', encoding='utf-8', newline='\n') as post:
             post.write('---\r\n')
-            post.write('layout: \'post\'\r\n')
-            post.write(f'title: \'{row[2]}\'\r\n')
-            post.write(f'date: \'{__data}\'\r\n')
-            post.write(f'categories: \'{row[1]}\'\r\n')
+            post.write('layout: post\r\n')
+            post.write(f'title: {post_title}\r\n')
+            post.write(f'date: {post_date}\r\n')
+            post.write(f'categories: {post_categories}\r\n')
             post.write('---\r\n')
             post.write('\r\n')
             post.write(f'# {row[2]}\r\n')

@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'BFF ESTUDIO DE BELEZA '
-date: '2020-04-09 21:44:41 '
-categories: 'Beleza e Estética'
+layout: post
+title: BFF ESTUDIO DE BELEZA 
+date: 2020-04-09 21:44:41 
+categories: Beleza e Estética
 ---
 
 # BFF ESTUDIO DE BELEZA 

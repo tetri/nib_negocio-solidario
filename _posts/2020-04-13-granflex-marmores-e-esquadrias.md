@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'Granflex marmores e esquadrias '
-date: '2020-04-13 09:17:38 '
-categories: 'Construção Civil'
+layout: post
+title: Granflex marmores e esquadrias 
+date: 2020-04-13 09:17:38 
+categories: Construção Civil
 ---
 
 # Granflex marmores e esquadrias 

@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'ROCHATECH SERVIÇOS'
-date: '2020-04-26 09:06:05 '
-categories: 'Serviços e Manutenção'
+layout: post
+title: ROCHATECH SERVIÇOS
+date: 2020-04-26 09:06:05 
+categories: Serviços e Manutenção
 ---
 
 # ROCHATECH SERVIÇOS

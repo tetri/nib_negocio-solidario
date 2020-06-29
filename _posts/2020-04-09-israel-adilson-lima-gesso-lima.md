@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'Israel Adilson Lima - Gesso Lima'
-date: '2020-04-09 22:08:51 '
-categories: 'Serviços e Manutenção'
+layout: post
+title: Israel Adilson Lima - Gesso Lima
+date: 2020-04-09 22:08:51 
+categories: Serviços e Manutenção
 ---
 
 # Israel Adilson Lima - Gesso Lima

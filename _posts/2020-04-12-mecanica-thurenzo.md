@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'Mecânica Thurenzo '
-date: '2020-04-12 17:30:14 '
-categories: 'Serviços Automotivos'
+layout: post
+title: Mecânica Thurenzo 
+date: 2020-04-12 17:30:14 
+categories: Serviços Automotivos
 ---
 
 # Mecânica Thurenzo 

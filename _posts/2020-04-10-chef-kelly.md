@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'Chef kelly '
-date: '2020-04-10 10:05:09 '
-categories: 'Alimentação'
+layout: post
+title: Chef kelly 
+date: 2020-04-10 10:05:09 
+categories: Alimentação
 ---
 
 # Chef kelly 

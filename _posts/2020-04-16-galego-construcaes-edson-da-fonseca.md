@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'Galego construçães (Edson da Fonseca)'
-date: '2020-04-16 20:26:07 '
-categories: 'Serviços e Manutenção'
+layout: post
+title: Galego construçães (Edson da Fonseca)
+date: 2020-04-16 20:26:07 
+categories: Serviços e Manutenção
 ---
 
 # Galego construçães (Edson da Fonseca)

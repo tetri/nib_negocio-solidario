@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'VM SUPORTE E ASSESSORIA DOCUMENTAL'
-date: '2020-04-13 11:15:29 '
-categories: 'Serviços Jurídicos'
+layout: post
+title: VM SUPORTE E ASSESSORIA DOCUMENTAL
+date: 2020-04-13 11:15:29 
+categories: Serviços Jurídicos
 ---
 
 # VM SUPORTE E ASSESSORIA DOCUMENTAL

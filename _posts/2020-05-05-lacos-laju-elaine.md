@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'Laços LaJu  (Elaine)'
-date: '2020-05-05 09:06:45 '
-categories: 'Artesanato'
+layout: post
+title: Laços LaJu  (Elaine)
+date: 2020-05-05 09:06:45 
+categories: Artesanato
 ---
 
 # Laços LaJu  (Elaine)

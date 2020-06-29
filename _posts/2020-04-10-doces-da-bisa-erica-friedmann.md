@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'Doces da Bisa (Érica Friedmann)'
-date: '2020-04-10 07:53:15 '
-categories: 'Alimentação'
+layout: post
+title: Doces da Bisa (Érica Friedmann)
+date: 2020-04-10 07:53:15 
+categories: Alimentação
 ---
 
 # Doces da Bisa (Érica Friedmann)

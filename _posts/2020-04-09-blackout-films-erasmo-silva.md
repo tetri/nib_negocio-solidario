@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'Blackout films (Erasmo Silva) '
-date: '2020-04-09 21:42:44 '
-categories: 'Serviços Automotivos'
+layout: post
+title: Blackout films (Erasmo Silva) 
+date: 2020-04-09 21:42:44 
+categories: Serviços Automotivos
 ---
 
 # Blackout films (Erasmo Silva) 

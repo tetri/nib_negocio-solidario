@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'Dal Pisol soluções eletricas'
-date: '2020-04-09 21:33:07 '
-categories: 'Serviços e Manutenção'
+layout: post
+title: Dal Pisol soluções eletricas
+date: 2020-04-09 21:33:07 
+categories: Serviços e Manutenção
 ---
 
 # Dal Pisol soluções eletricas

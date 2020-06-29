@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'Mimo Crafteria'
-date: '2020-04-16 08:44:24 '
-categories: 'Artesanato'
+layout: post
+title: Mimo Crafteria
+date: 2020-04-16 08:44:24 
+categories: Artesanato
 ---
 
 # Mimo Crafteria

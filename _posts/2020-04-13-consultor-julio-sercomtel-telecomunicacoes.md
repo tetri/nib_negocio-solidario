@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'Consultor Júlio - Sercomtel Telecomunicações'
-date: '2020-04-13 13:46:00 '
-categories: 'Consultoria'
+layout: post
+title: Consultor Júlio - Sercomtel Telecomunicações
+date: 2020-04-13 13:46:00 
+categories: Consultoria
 ---
 
 # Consultor Júlio - Sercomtel Telecomunicações

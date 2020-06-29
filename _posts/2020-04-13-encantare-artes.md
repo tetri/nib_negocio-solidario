@@ -1,8 +1,8 @@
 ---
-layout: 'post'
-title: 'Encantare artes '
-date: '2020-04-13 15:33:34 '
-categories: 'Artesanato'
+layout: post
+title: Encantare artes 
+date: 2020-04-13 15:33:34 
+categories: Artesanato
 ---
 
 # Encantare artes 
