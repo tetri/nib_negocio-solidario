@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Romance moda"
-category:  "Moda e Confecção"
+title: 'Romance moda'
+date: '2020-05-09 09:42:00 '
+categories: 'Moda e Confecção'
 ---
 
 # Romance moda

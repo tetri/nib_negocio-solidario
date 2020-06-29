@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Daniele Fagundes"
-category:  "Organização"
+title: 'Daniele Fagundes'
+date: '2020-04-09 23:39:48 '
+categories: 'Organização'
 ---
 
 # Daniele Fagundes

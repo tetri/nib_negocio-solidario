@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Embalgraph Embalagens"
-category:  "Comunicação Visual"
+title: 'Embalgraph Embalagens'
+date: '2020-04-09 21:33:14 '
+categories: 'Comunicação Visual'
 ---
 
 # Embalgraph Embalagens

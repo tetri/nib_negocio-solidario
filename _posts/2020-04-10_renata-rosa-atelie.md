@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Renata Rosa Ateliê"
-category:  "Moda e Confecção"
+title: 'Renata Rosa Ateliê'
+date: '2020-04-10 14:53:36 '
+categories: 'Moda e Confecção'
 ---
 
 # Renata Rosa Ateliê

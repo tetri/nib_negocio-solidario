@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Studio Miriã Priscilla"
-category:  "Artesanato"
+title: 'Studio Miriã Priscilla'
+date: '2020-04-10 00:52:45 '
+categories: 'Artesanato'
 ---
 
 # Studio Miriã Priscilla

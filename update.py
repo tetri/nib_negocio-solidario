@@ -34,7 +34,8 @@ with open('_data/negocio-solidario.csv', mode='w', encoding='utf-8', newline='\n
         w.writerow(row)
 
         data = datetime.strptime(row[0],'%d/%m/%Y %H:%M:%S')
-        data = data.strftime('%Y-%m-%d')
+        _data = data.strftime('%Y-%m-%d')
+        __data = data.strftime('%Y-%m-%d %H:%M:%S %z')
         #print(data)
 
         slug = slugify(row[2])
@@ -42,11 +43,12 @@ with open('_data/negocio-solidario.csv', mode='w', encoding='utf-8', newline='\n
 
         #print(f'_posts/{data}_{slug}.md')
 
-        with open(f'_posts/{data}_{slug}.md', mode='w', encoding='utf-8', newline='\n') as post:
+        with open(f'_posts/{_data}_{slug}.md', mode='w', encoding='utf-8', newline='\n') as post:
             post.write('---\n')
             post.write('layout: post\n')
-            post.write(f'title:  "{row[2]}"\n')
-            post.write(f'category:  "{row[1]}"\n')
+            post.write(f'title: \'{row[2]}\'\n')
+            post.write(f'date: \'{__data}\'\n')
+            post.write(f'categories: \'{row[1]}\'\n')
             post.write('---\n')
             post.write('\n')
             post.write(f'# {row[2]}\n')

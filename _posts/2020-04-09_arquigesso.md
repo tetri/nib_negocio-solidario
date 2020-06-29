@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Arquigesso"
-category:  "Construção Civil"
+title: 'Arquigesso'
+date: '2020-04-09 21:22:10 '
+categories: 'Construção Civil'
 ---
 
 # Arquigesso

@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Salão da Néia "
-category:  "Beleza e Estética"
+title: 'Salão da Néia '
+date: '2020-04-24 08:40:34 '
+categories: 'Beleza e Estética'
 ---
 
 # Salão da Néia 

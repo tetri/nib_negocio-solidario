@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "BOCCATA CAFÉ & CUCCINA "
-category:  "Alimentação"
+title: 'BOCCATA CAFÉ & CUCCINA '
+date: '2020-04-09 21:45:48 '
+categories: 'Alimentação'
 ---
 
 # BOCCATA CAFÉ & CUCCINA 

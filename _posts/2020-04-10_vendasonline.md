@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "VendasOnline"
-category:  "Vendas Online"
+title: 'VendasOnline'
+date: '2020-04-10 14:12:32 '
+categories: 'Vendas Online'
 ---
 
 # VendasOnline

@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Personal Organizer "
-category:  "Organização"
+title: 'Personal Organizer '
+date: '2020-04-09 22:03:44 '
+categories: 'Organização'
 ---
 
 # Personal Organizer 

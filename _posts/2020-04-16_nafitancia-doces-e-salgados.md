@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "NaFitancia Doces e Salgados"
-category:  "Alimentação"
+title: 'NaFitancia Doces e Salgados'
+date: '2020-04-16 15:00:38 '
+categories: 'Alimentação'
 ---
 
 # NaFitancia Doces e Salgados

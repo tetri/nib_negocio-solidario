@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "JLB Ind. Com. Enxovais Ltda"
-category:  "Moda e Confecção"
+title: 'JLB Ind. Com. Enxovais Ltda'
+date: '2020-04-13 13:10:33 '
+categories: 'Moda e Confecção'
 ---
 
 # JLB Ind. Com. Enxovais Ltda

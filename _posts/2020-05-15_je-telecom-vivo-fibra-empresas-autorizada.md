@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "JE Telecom - VIVO FIBRA EMPRESAS AUTORIZADA"
-category:  "Serviços e Manutenção"
+title: 'JE Telecom - VIVO FIBRA EMPRESAS AUTORIZADA'
+date: '2020-05-15 15:02:46 '
+categories: 'Serviços e Manutenção'
 ---
 
 # JE Telecom - VIVO FIBRA EMPRESAS AUTORIZADA

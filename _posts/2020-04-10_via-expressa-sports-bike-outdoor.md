@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Via Expressa Sports - Bike & Outdoor"
-category:  "Produtos Esportivos"
+title: 'Via Expressa Sports - Bike & Outdoor'
+date: '2020-04-10 04:08:36 '
+categories: 'Produtos Esportivos'
 ---
 
 # Via Expressa Sports - Bike & Outdoor

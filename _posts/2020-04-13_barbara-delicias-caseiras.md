@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Barbara Delícias Caseiras "
-category:  "Alimentação"
+title: 'Barbara Delícias Caseiras '
+date: '2020-04-13 10:49:21 '
+categories: 'Alimentação'
 ---
 
 # Barbara Delícias Caseiras 

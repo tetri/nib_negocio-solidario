@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "PETER PINTURAS"
-category:  "Serviços e Manutenção"
+title: 'PETER PINTURAS'
+date: '2020-04-09 23:37:09 '
+categories: 'Serviços e Manutenção'
 ---
 
 # PETER PINTURAS

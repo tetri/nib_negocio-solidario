@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "LOJAS ECODECOR"
-category:  "Casa e Decoração"
+title: 'LOJAS ECODECOR'
+date: '2020-04-13 14:35:03 '
+categories: 'Casa e Decoração'
 ---
 
 # LOJAS ECODECOR

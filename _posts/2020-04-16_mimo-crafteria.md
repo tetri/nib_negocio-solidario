@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Mimo Crafteria"
-category:  "Artesanato"
+title: 'Mimo Crafteria'
+date: '2020-04-16 08:44:24 '
+categories: 'Artesanato'
 ---
 
 # Mimo Crafteria

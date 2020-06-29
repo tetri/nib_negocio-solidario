@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Infinity JPrado"
-category:  "Moda e Confecção"
+title: 'Infinity JPrado'
+date: '2020-04-29 20:41:06 '
+categories: 'Moda e Confecção'
 ---
 
 # Infinity JPrado

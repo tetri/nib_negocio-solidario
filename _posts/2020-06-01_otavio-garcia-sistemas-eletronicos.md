@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "OTAVIO GARCIA SISTEMAS ELETRÔNICOS"
-category:  "Serviços e Manutenção"
+title: 'OTAVIO GARCIA SISTEMAS ELETRÔNICOS'
+date: '2020-06-01 15:54:51 '
+categories: 'Serviços e Manutenção'
 ---
 
 # OTAVIO GARCIA SISTEMAS ELETRÔNICOS

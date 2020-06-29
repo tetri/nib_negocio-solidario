@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Imobiliária Deon"
-category:  "Imóveis"
+title: 'Imobiliária Deon'
+date: '2020-04-12 18:27:55 '
+categories: 'Imóveis'
 ---
 
 # Imobiliária Deon

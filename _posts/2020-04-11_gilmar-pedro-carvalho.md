@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Gilmar Pedro Carvalho"
-category:  "Moda e Confecção"
+title: 'Gilmar Pedro Carvalho'
+date: '2020-04-11 15:27:14 '
+categories: 'Moda e Confecção'
 ---
 
 # Gilmar Pedro Carvalho

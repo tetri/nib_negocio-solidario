@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Vitta Care Estética Personalizada"
-category:  "Beleza e Estética"
+title: 'Vitta Care Estética Personalizada'
+date: '2020-04-19 18:30:47 '
+categories: 'Beleza e Estética'
 ---
 
 # Vitta Care Estética Personalizada

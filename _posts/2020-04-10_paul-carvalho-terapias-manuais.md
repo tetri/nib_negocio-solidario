@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Paul Carvalho Terapias Manuais "
-category:  "Beleza e Estética"
+title: 'Paul Carvalho Terapias Manuais '
+date: '2020-04-10 09:42:20 '
+categories: 'Beleza e Estética'
 ---
 
 # Paul Carvalho Terapias Manuais 

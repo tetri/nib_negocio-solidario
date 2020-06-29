@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Condor Estacionamento e Lava Car"
-category:  "Serviços Automotivos"
+title: 'Condor Estacionamento e Lava Car'
+date: '2020-04-13 09:45:31 '
+categories: 'Serviços Automotivos'
 ---
 
 # Condor Estacionamento e Lava Car

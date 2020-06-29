@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Loja virtual LimaNatari"
-category:  "Vendas Online"
+title: 'Loja virtual LimaNatari'
+date: '2020-04-19 16:01:04 '
+categories: 'Vendas Online'
 ---
 
 # Loja virtual LimaNatari

@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Cristiane Amaral"
-category:  "Artesanato"
+title: 'Cristiane Amaral'
+date: '2020-04-16 22:05:29 '
+categories: 'Artesanato'
 ---
 
 # Cristiane Amaral

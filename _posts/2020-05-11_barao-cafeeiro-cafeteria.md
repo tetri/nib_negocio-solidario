@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Barão Cafeeiro - Cafeteria"
-category:  "Alimentação"
+title: 'Barão Cafeeiro - Cafeteria'
+date: '2020-05-11 12:39:15 '
+categories: 'Alimentação'
 ---
 
 # Barão Cafeeiro - Cafeteria

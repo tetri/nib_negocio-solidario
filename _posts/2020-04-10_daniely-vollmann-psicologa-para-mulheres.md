@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Daniely Vollmann - Psicóloga para mulheres"
-category:  "Serviços de Saúde"
+title: 'Daniely Vollmann - Psicóloga para mulheres'
+date: '2020-04-10 11:18:16 '
+categories: 'Serviços de Saúde'
 ---
 
 # Daniely Vollmann - Psicóloga para mulheres

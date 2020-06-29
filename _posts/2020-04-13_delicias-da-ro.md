@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Delícias da Rô"
-category:  "Alimentação"
+title: 'Delícias da Rô'
+date: '2020-04-13 13:24:21 '
+categories: 'Alimentação'
 ---
 
 # Delícias da Rô

@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "MOTA SEGURANÇA "
-category:  "Segurança"
+title: 'MOTA SEGURANÇA '
+date: '2020-04-09 22:14:52 '
+categories: 'Segurança'
 ---
 
 # MOTA SEGURANÇA 

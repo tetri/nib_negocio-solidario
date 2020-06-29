@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Rodrigo Persianas "
-category:  "Casa e Decoração"
+title: 'Rodrigo Persianas '
+date: '2020-04-09 21:13:42 '
+categories: 'Casa e Decoração'
 ---
 
 # Rodrigo Persianas 

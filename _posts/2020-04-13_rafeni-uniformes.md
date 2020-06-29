@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Rafeni Uniformes"
-category:  "Moda e Confecção"
+title: 'Rafeni Uniformes'
+date: '2020-04-13 19:28:13 '
+categories: 'Moda e Confecção'
 ---
 
 # Rafeni Uniformes

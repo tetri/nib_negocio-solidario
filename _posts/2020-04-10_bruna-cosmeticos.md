@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Bruna Cosméticos "
-category:  "Beleza e Estética"
+title: 'Bruna Cosméticos '
+date: '2020-04-10 12:12:20 '
+categories: 'Beleza e Estética'
 ---
 
 # Bruna Cosméticos 

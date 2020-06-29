@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Carlos Eduardo Fagundes"
-category:  "Comunicação Visual"
+title: 'Carlos Eduardo Fagundes'
+date: '2020-04-09 23:38:24 '
+categories: 'Comunicação Visual'
 ---
 
 # Carlos Eduardo Fagundes

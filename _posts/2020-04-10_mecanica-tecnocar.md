@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Mecanica Tecnocar"
-category:  "Serviços Automotivos"
+title: 'Mecanica Tecnocar'
+date: '2020-04-10 21:59:13 '
+categories: 'Serviços Automotivos'
 ---
 
 # Mecanica Tecnocar

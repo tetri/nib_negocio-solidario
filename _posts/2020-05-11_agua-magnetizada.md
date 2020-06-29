@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Agua Magnetizada"
-category:  "Sem categoria"
+title: 'Agua Magnetizada'
+date: '2020-05-11 15:23:28 '
+categories: 'Sem categoria'
 ---
 
 # Agua Magnetizada

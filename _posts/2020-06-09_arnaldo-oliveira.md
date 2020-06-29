@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Arnaldo Oliveira"
-category:  "Serviços e Manutenção"
+title: 'Arnaldo Oliveira'
+date: '2020-06-09 02:19:31 '
+categories: 'Serviços e Manutenção'
 ---
 
 # Arnaldo Oliveira
