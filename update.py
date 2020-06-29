@@ -48,4 +48,8 @@ with open('_data/negocio-solidario.csv', mode='w', encoding='utf-8', newline='\n
             post.write(f'title:  "{row[2]}"\n')
             post.write(f'category:  "{row[1]}"\n')
             post.write('---\n')
+            post.write('\n')
+            post.write(f'# {row[2]}\n')
+            post.write('\n')
+            post.write(f'{row[3]}\n')
 

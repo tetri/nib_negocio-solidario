@@ -6,6 +6,8 @@ author: "Tetri Mesquita"
 
 include: ['.htaccess','browserconfig.xml','ads.txt','manifest.json']
 
+exclude: ['requirements.txt','send.py','update.bat','update.py']
+
 timezone: America/Sao_Paulo
 
 plugins:
