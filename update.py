@@ -3,6 +3,9 @@
 import csv
 import urllib.request
 
+from datetime import datetime
+from slugify import slugify
+
 url = 'https://docs.google.com/spreadsheets/d/1if5WstOy_zJTdLdR2rlfxuuVSsQEh0EZVQtSylsSmwY/export?format=csv'
 
 local_filename, headers = urllib.request.urlretrieve(url)
@@ -29,3 +32,20 @@ with open('_data/negocio-solidario.csv', mode='w', encoding='utf-8', newline='\n
         idx = idx + 1
         
         w.writerow(row)
+
+        data = datetime.strptime(row[0],'%d/%m/%Y %H:%M:%S')
+        data = data.strftime('%Y-%m-%d')
+        #print(data)
+
+        slug = slugify(row[2])
+        #print (slug)
+
+        #print(f'_posts/{data}_{slug}.md')
+
+        with open(f'_posts/{data}_{slug}.md', mode='w', encoding='utf-8', newline='\n') as post:
+            post.write('---\n')
+            post.write('layout: post\n')
+            post.write(f'title:  "{row[2]}"\n')
+            post.write(f'category:  "{row[1]}"\n')
+            post.write('---\n')
+
