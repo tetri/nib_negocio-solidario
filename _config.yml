@@ -7,3 +7,7 @@ author: "Tetri Mesquita"
 include: ['.htaccess','browserconfig.xml','ads.txt','manifest.json']
 
 timezone: America/Sao_Paulo
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
