@@ -13,3 +13,5 @@ timezone: America/Sao_Paulo
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+
+permalink: /:title
