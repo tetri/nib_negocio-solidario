@@ -2,7 +2,7 @@
 layout: post
 title: CAFÉ KIWI / FÉ E CAFÉ
 date: 2020-07-03 11:09:39 
-categories: Sem categoria
+categories: Alimentação
 ---
 
 # CAFÉ KIWI / FÉ E CAFÉ
