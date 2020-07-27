@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class='row'>
+
+        {% block content %}
+        {% if 'query_edit' in request.url %}
+        <div style='margin-left: 100px; width: 45%;'>
+            <div class="alert alert-info" role="alert">
+                <strong>Your turn!</strong> Edit your selected data line here ...
+            </div>
+
+            {% for eresult in eresults %}
+
+            <form action="edit" method="POST">
+                <p>Data: {{eresult["data"]}}</p>
+                <p>Categoria: <input class="form-control" type="text" name="categoria" style='width: 100%;' value='{{eresult["categoria"]}}' /></p>
+                <p>Nome: <input class="form-control" type="text" name="nome" style='width: 100%;' value='{{eresult["nome"]}}' /></p>
+                <p>Produtos: <input class="form-control" type="text" name="produtos" style='width: 100%;' value='{{eresult["produtos"]}}' /></p>
+                <p>Telefone: <input class="form-control" type="text" name="telefone" style='width: 100%;' value='{{eresult["telefone"]}}' /></p>
+                <p>Link: <input class="form-control" type="text" name="link" style='width: 100%;' value='{{eresult["link"]}}' /></p>
+                <input type="hidden" name="old_nome" value='{{eresult["nome"]}}' />
+                <input type="hidden" name="old_local" value='{{eresult["local"]}}' />
+
+                {% endfor %}
+
+                <br>
+
+                <p><input class="btn-primary" type="submit" value="Update Data" /></p>
+            </form>
+        </div>
+
+
+
+
+        {% endif %}
+        {% endblock content %}
+
+
+    </div> <!-- ends row div -->
+
+    <br><br>
+
+    
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Categoria</th>
+                <th>Nome</th>
+                <th>Produtos</th>
+                <th>Local</th>
+                <th>Telefone</th>
+                <th>Entrega</th>
+                <th>Link</th>
+                <!--<th>Ciente</th>//-->
+                <th>Editar</th>
+                <th>Excluir</th>
+            </tr>
+        </thead>
+
+        {% for result in results  %}
+        <tr>
+            <td>{{result[1]}}</td> <!-- data -->
+            <td>{{result[2]}}</td> <!-- categoria -->
+            <td>{{result[3]}}</td> <!-- nome -->
+            <td>{{result[4]}}</td>
+            <td>{{result[5]}}</td>
+            <td>{{result[6]}}</td>
+            <td>{{result[7]}}</td>
+            <td>{{result[8]}},</td>
+            <!--<td>{{result['ciente']}}</td>//-->
+            <td><a href="{{ url_for('sql_editlink', nome=result[3], local=result[5]) }}"><i
+                        class="fas fa-edit"></i></a></td>
+            <td><a href="{{ url_for('sql_datadelete', nome=result[3], local=result[5]) }}"><i
+                        class="fas fa-trash"></i></a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+
+</html>

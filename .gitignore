@@ -4,3 +4,4 @@ _site
 venv
 Gemfile.lock
 update.bat
+functions/__pycache__/
