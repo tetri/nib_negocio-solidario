@@ -9,21 +9,27 @@ if (not os.path.isfile('data.db')):
     headers = ['data', 'categoria', 'nome', 'produtos',
                'local', 'telefone', 'entrega', 'link', 'ciente']
 
-    data_table = pd.read_csv(data_url, header=None, names=headers)
+    nib = pd.read_csv(data_url, header=None, names=headers)
 
-    with sqlite3.connect('data.db') as conn:
-        data_table.to_sql('data_table', conn, dtype={
+    with sqlite3.connect('negocio-solidario.db') as conn:
+        nib.to_sql('nib', conn, dtype={
+            'id': 'integer',
             'data': 'date',
             'categoria': 'text',
             'nome': 'text',
             'produtos': 'text',
             'local': 'text',
             'telefone': 'text',
+            'telefone2': 'text',
+            'telefone3': 'text',
+            'telefone4': 'text',
             'entrega': 'text',
             'link': 'text',
+            'link2': 'text',
+            'link3': 'text',
+            'link4': 'text',
             'ciente': 'text'
         })
-
 
 def sql_query(query):
     with sqlite3.connect('data.db') as conn:

@@ -7,7 +7,7 @@ app = Flask(__name__)
 def sql_database():
     from functions.sqlquery import sql_query
 
-    results = sql_query("SELECT * FROM data_table order by data desc LIMIT 10")
+    results = sql_query("SELECT * FROM nib order by data desc LIMIT 10")
     #print(results)
 
     return render_template('sqldatabase.html', results=results)
@@ -21,9 +21,9 @@ def sql_datadelete():
         nome = request.args.get('nome')
         local = request.args.get('local')
 
-        sql_delete("DELETE FROM data_table where nome = ? and local = ?", (nome, local))
+        sql_delete("DELETE FROM nib where nome = ? and local = ?", (nome, local))
 
-    #results = sql_query("SELECT * FROM data_table")
+    #results = sql_query("SELECT * FROM nib")
 
     #return render_template('sqldatabase.html', results=results)
     return sql_database()
@@ -37,9 +37,9 @@ def sql_editlink():
         nome = request.args.get('nome')
         local = request.args.get('local')
 
-        eresults = sql_query("SELECT * FROM data_table where nome = ? and local = ?", (nome, local))
+        eresults = sql_query("SELECT * FROM nib where nome = ? and local = ?", (nome, local))
     
-    #results = sql_query("SELECT * FROM data_table")
+    #results = sql_query("SELECT * FROM nib")
 
     #return render_template('sqldatabase.html', eresults=eresults, results=results)
     return sql_database()
@@ -59,10 +59,10 @@ def sql_dataedit():
         state = request.form['state']
         zip = request.form['zip']
 
-        sql_edit("UPDATE data_table set first_name=?,last_name=?,address=?,city=?,state=?,zip=? WHERE first_name=? and last_name=?",
+        sql_edit("UPDATE nib set first_name=?,last_name=?,address=?,city=?,state=?,zip=? WHERE first_name=? and last_name=?",
                         (first_name, last_name, address, city, state, zip, old_first_name, old_last_name))
 
-    #results = sql_query("SELECT * FROM data_table")
+    #results = sql_query("SELECT * FROM nib")
 
     #return render_template('sqldatabase.html', results=results)
     return sql_database()
