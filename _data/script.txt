@@ -1,0 +1,14 @@
+create table nib3 as 
+select null as id, 
+       datetime(substr(data, 7,4) || "-" || substr(data, 4, 2) || '-' || substr(data, 1, 2) || ' ' || substr(data, 12, 30)) as datacadastro, 
+       categoria, 
+       nome, 
+       produtos, 
+       local, 
+       telefone as telefone1, 
+       null as telefone2, 
+       null as telefone3, 
+       link as link1, 
+       null as link2, 
+       null as link3 
+  from nib;
