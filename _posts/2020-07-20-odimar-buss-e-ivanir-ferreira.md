@@ -2,7 +2,7 @@
 layout: post
 title: ODIMAR BUSS E IVANIR FERREIRA
 date: 2020-07-20 22:40:09 
-categories: Sem categoria
+categories: Vendas
 ---
 
 # ODIMAR BUSS E IVANIR FERREIRA
