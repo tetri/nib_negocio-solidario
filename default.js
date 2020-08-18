@@ -14,18 +14,23 @@ String.prototype.hashCode = function () {
   return hash;
 };
 
-/* serviceWorker desabilitado temporariamente
 window.addEventListener("load", () => {
   if ("serviceWorker" in navigator) {
+    // serviceWorker desabilitado temporariamente
+    //try {
+    //  navigator.serviceWorker.register("serviceWorker.js");
+    //  //console.debug("Service Worker Registered");
+    //} catch (error) {
+    //  //console.debug("Service Worker Registration Failed");
+    //}
+
     try {
-      navigator.serviceWorker.register("serviceWorker.js");
-      //console.debug("Service Worker Registered");
+      navigator.serviceWorker.getRegistrations().then( function(registrations) { for(let registration of registrations) { registration.unregister(); } }); 
     } catch (error) {
       //console.debug("Service Worker Registration Failed");
     }
   }
 });
-*/
 
 function montaButton(item, total) {
   return `<button type="button" class="btn btn-primary categoria" style="margin-right: 1rem; margin-bottom: 1rem;" data-categoria="${item}">
