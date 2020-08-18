@@ -5,3 +5,5 @@ venv
 Gemfile.lock
 update.bat
 functions/__pycache__/
+__pycache__
+templates
