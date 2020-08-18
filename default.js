@@ -256,7 +256,7 @@ if (items)
       categorias[item.categoria] = 1;
   }
 
-if (categorias.length) {
+if (categorias.length > 0) {
   //console.debug("categorias", categorias);
   categorias = ordenarDicionarioPorChave(categorias);
   displayCategories(categorias);
