@@ -247,14 +247,19 @@ function ordenarDicionarioPorChave(dict) {
 }
 
 let categorias = {};
-for (let item of items) {
-  if (categorias[item.categoria] > 0)
-    categorias[item.categoria] = categorias[item.categoria] + 1;
-  else categorias[item.categoria] = 1;
+if (items)
+  for (let item of items) {
+    if (categorias[item.categoria] > 0)
+      categorias[item.categoria] = categorias[item.categoria] + 1;
+    else 
+      categorias[item.categoria] = 1;
+  }
+
+if (categorias.length) {
+  //console.debug("categorias", categorias);
+  categorias = ordenarDicionarioPorChave(categorias);
+  displayCategories(categorias);
 }
-//console.debug("categorias", categorias);
-categorias = ordenarDicionarioPorChave(categorias);
-displayCategories(categorias);
 
 items = shuffle(items);
 let _items = items.slice();
