@@ -17,19 +17,19 @@ String.prototype.hashCode = function () {
 window.addEventListener("load", () => {
   if ("serviceWorker" in navigator) {
     //habilitar
-    try {
-      navigator.serviceWorker.register("serviceWorker.js");
-      //console.debug("Service Worker Registered");
-    } catch (error) {
-      //console.debug("Service Worker Registration Failed");
-    }
-
-    //desabilitar
     //try {
-    //  navigator.serviceWorker.getRegistrations().then( function(registrations) { for(let registration of registrations) { registration.unregister(); } }); 
+    //  navigator.serviceWorker.register("serviceWorker.js");
+    //  //console.debug("Service Worker Registered");
     //} catch (error) {
     //  //console.debug("Service Worker Registration Failed");
     //}
+
+    //desabilitar
+    try {
+      navigator.serviceWorker.getRegistrations().then( function(registrations) { for(let registration of registrations) { registration.unregister(); } }); 
+    } catch (error) {
+      //console.debug("Service Worker Registration Failed");
+    }
   }
 });
 
