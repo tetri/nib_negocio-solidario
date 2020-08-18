@@ -14,6 +14,7 @@ String.prototype.hashCode = function () {
   return hash;
 };
 
+/* serviceWorker desabilitado temporariamente
 window.addEventListener("load", () => {
   if ("serviceWorker" in navigator) {
     try {
@@ -24,6 +25,7 @@ window.addEventListener("load", () => {
     }
   }
 });
+*/
 
 function montaButton(item, total) {
   return `<button type="button" class="btn btn-primary categoria" style="margin-right: 1rem; margin-bottom: 1rem;" data-categoria="${item}">
