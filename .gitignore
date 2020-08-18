@@ -1,9 +1,9 @@
+__pycache__
+_site
+functions/__pycache__/
+templates
+venv
 .jekyll-cache
 .vscode
-_site
-venv
 Gemfile.lock
 update.bat
-functions/__pycache__/
-__pycache__
-templates

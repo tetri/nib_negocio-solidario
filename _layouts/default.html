@@ -36,6 +36,7 @@
         {
           "data": "{{ item.data | xml_escape }}",
           "nome": "{{ item.nome | xml_escape }}",
+          "slug": "{{ item.nome | slugify }}",
           "produtos": {{ item.produtos | strip_html | strip_newlines | jsonify }},
           "local": {{ item.local | strip_html | strip_newlines | jsonify }},
           "telefone": "{{ item.telefone | xml_escape }}",
