@@ -23,7 +23,7 @@ with open('_data/negocio-solidario.csv', mode='w', encoding='utf-8', newline='\n
 
     idx = 1
     # ao remover duplicados ou excluídos, cuidado com a classificação em categorias!
-    duplicados = [0,1,2,39,41,52,64,70,77,101,132,138,152,161,162,168,169]
+    duplicados = [0,1,2,39,41,52,64,70,77,101,132,138,152,161,162,168,169,178,179,180]
     excluidos = [156]
 
     for i, row in enumerate(cr):
