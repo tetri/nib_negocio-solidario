@@ -2,7 +2,7 @@
 layout: post
 title: ÓTICA REAL
 date: 2020-08-17 16:36:20 
-categories: Sem categoria
+categories: Beleza e Estética
 ---
 
 # ÓTICA REAL

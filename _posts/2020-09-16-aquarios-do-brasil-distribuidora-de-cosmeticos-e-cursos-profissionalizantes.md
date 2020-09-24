@@ -2,7 +2,7 @@
 layout: post
 title: Aquarios do Brasil Distribuidora de cosméticos e cursos profissionalizantes
 date: 2020-09-16 22:38:52 
-categories: Sem categoria
+categories: Beleza e Estética
 ---
 
 # Aquarios do Brasil Distribuidora de cosméticos e cursos profissionalizantes
