@@ -46,7 +46,8 @@ function montaCard(item) {
     '<div class="card-body">' +
     //`    <p>${item.data.toString().hashCode()}</p>` +
     `    <span class="badge badge-pill badge-primary float-right">${item.categoria}</span>` +
-    `    <h4 class="card-title"><a href="negocios/${item.slug}">${item.nome}</a></h4>`;
+    //`    <h2 class="card-title"><a href="negocios/${item.slug}">${item.nome}</a></h4>`;
+    `    <h2 class="card-title">${item.nome}</h4>`;
 
   if (item.produtos) card += `    <p class="card-text">${item.produtos}</p>`;
 

@@ -1,10 +1,10 @@
 url: "https://tetri.github.io"
 baseurl: "nib_negocio-solidario/"
 title: "Negócio Solidário"
-description: "Apoio aos comerciantes, empreendedores e autônomos da Nova Igreja Batista"
+description: "Apoio aos comerciantes, empreendedores e autônomos da Nova Igreja Batista do Paraná"
 author: "Tetri Mesquita"
 
-include: ['.htaccess','browserconfig.xml','ads.txt','manifest.json']
+include: ['.htaccess','ads.txt','browserconfig.xml','manifest.json','robots.txt','serviceWorker.js']
 
 exclude: ['requirements.txt','send.py','update.bat','update.py']
 
