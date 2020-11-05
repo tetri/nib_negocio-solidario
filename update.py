@@ -41,6 +41,9 @@ with open('_data/negocio-solidario.csv', mode='w', encoding='utf-8', newline='\n
 
         if (idx == 18):
             row[5] = "Vitor Camargo (Nova Teens) " + row[5]
+
+        if (idx == 75):
+            row[5] = row[5] + " 45 99970-5857" 
         
         w.writerow(row)
 
