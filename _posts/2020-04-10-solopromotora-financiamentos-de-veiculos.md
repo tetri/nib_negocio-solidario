@@ -2,7 +2,7 @@
 layout: post
 title: Solopromotora Financiamentos de Veículos 
 date: 2020-04-10 12:07:54 
-categories: Serviços Automotivos
+categories: Serviços Financeiros
 ---
 
 # Solopromotora Financiamentos de Veículos 

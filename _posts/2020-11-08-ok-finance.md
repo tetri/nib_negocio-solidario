@@ -2,7 +2,7 @@
 layout: post
 title: OK FINANCE
 date: 2020-11-08 21:00:58 
-categories: Sem categoria
+categories: Serviços Financeiros
 ---
 
 # OK FINANCE
